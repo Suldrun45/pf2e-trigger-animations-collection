@@ -153,3 +153,33 @@ export function getAllJsonFiles(dir) {
 
   return files;
 }
+
+export function sluggify(text2, { camel = null } = {}) {
+  if (typeof text2 != "string")
+    return (console.warn("Non-string argument passed to `sluggify`"), "");
+  if (text2 === "-") return text2;
+  switch (camel) {
+    case null:
+      return text2
+        .replace(lowerCaseThenUpperCaseRE, "$1-$2")
+        .toLowerCase()
+        .replace(/['’]/g, "")
+        .replace(nonWordCharacterRE, " ")
+        .trim()
+        .replace(/[-\s]+/g, "-");
+    case "bactrian": {
+      const dromedary = sluggify(text2, { camel: "dromedary" });
+      return dromedary.charAt(0).toUpperCase() + dromedary.slice(1);
+    }
+    case "dromedary":
+      return text2
+        .replace(nonWordCharacterHyphenOrSpaceRE, "")
+        .replace(/[-_]+/g, " ")
+        .replace(upperOrWordBoundariedLowerRE, (part, index2) =>
+          index2 === 0 ? part.toLowerCase() : part.toUpperCase(),
+        )
+        .replace(/\s+/g, "");
+    default:
+      throw ErrorPF2e("I don't think that's a real camel.");
+  }
+}

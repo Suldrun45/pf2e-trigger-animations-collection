@@ -7,6 +7,7 @@
     "watch": "node build.mjs --watch",
     "combine": "node macros/combine-animations.mjs",
     "clean": "node macros/clean-jsons.mjs",
+    "test": "node macros/test-animations.mjs",
     "link": "node link.mjs"
   },
   "author": "Chasarooni",
