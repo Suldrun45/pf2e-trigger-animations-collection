@@ -32,7 +32,18 @@
     "requires": [
       {
         "id": "trigger-animations",
-        "type": "module"
+        "name": "Trigger Animations",
+        "type": "module",
+        "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json"
+      }
+    ],
+    "recommends": [
+      {
+        "id": "ggg",
+        "name": "GGG: Sequencer Sound DB Collection",
+        "type": "module",
+        "reason": "For SFX for the animations",
+        "manifest": "https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection/releases/latest/download/module.json"
       }
     ]
   },
@@ -53,11 +64,5 @@
   "manifest": "#{MANIFEST}#",
   "download": "#{DOWNLOAD}#",
   "license": "LICENSE",
-  "readme": "README.md",
-  "media": [
-    {
-      "type": "icon",
-      "url": "https://avatars2.githubusercontent.com/u/71292812?s=400&u=ccdb4eeb7abf551ca8f314e5a9bfd0479a4d3d41&v=4"
-    }
-  ]
+  "readme": "README.md"
 }
