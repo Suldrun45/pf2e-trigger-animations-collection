@@ -2,7 +2,7 @@
 
 _Note you don't need to literally check these off, just confirm you followed the process in these so that I can have an easier time merging the data in_
 
-- [ ] This animation doesn't exist already?
+- [ ] This animation doesn't exist [already](../ANIMATION_LIST.md)?
 - [ ] Is this PR for only one animation?
 - [ ] Pull Request is titled correctly `feat/<animation-source>`
 - [ ] File is named properly? (IE slug of it IE `shield-of-faith`)
@@ -16,7 +16,11 @@ _Note you don't need to literally check these off, just confirm you followed the
 
 Paste a video of it working here [ShareX](https://getsharex.com/) is an easy way to record this
 
+### Link Animation issue this closes
+
+closes #
+
 ## Actually Check these (for my logging purposes)
 
 - [ ] Includes Sound?
-- [ ] Haas support for JB2a Free?
+- [ ] Has support for [JB2a](https://library.jb2a.com/) Free?

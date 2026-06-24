@@ -12,7 +12,7 @@
 
 # Trigger Animation Trove (PF2e / SF2e)
 
-Pack of animations for Trigger Animations!
+Pack of animations for Trigger Animations! See the fully supported list [here](/ANIMATION_LIST.md)
 
 ## Animation Submission Guidelines
 
@@ -26,6 +26,7 @@ Pack of animations for Trigger Animations!
   - **medium** - ~3 animations / ~3 sfx --- This is the aim for the majority of animations
   - **high** - more of them
   - **PERSISTENT** - includes persistent animations at all
+  -
 
 ## Table of Contents
 

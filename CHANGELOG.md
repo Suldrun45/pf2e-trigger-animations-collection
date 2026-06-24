@@ -1,3 +1,13 @@
+## Unreleased
+
+- **New Animations**
+  - Hurtling Stone (@Chasarooni)
+
+## 0.0.3
+- Tested adding an animation
+- Updated the animation list
+- Added @ChasarooniZ as a CODEOWNER
+
 ## 0.0.2
 
 - Updated the PR template
