@@ -12,6 +12,7 @@ const SEGMENTS = {
   ATTACK_TYPE: 2,
   FEATURE_CLASS: 2,
   ITEM_TYPE: 2,
+  FEAT_CLASS: 3,
 };
 const CATEGORIES = {
   attacks: "Attacks",
@@ -44,7 +45,14 @@ function getTagsAndCategory({ path, originalTags }) {
       tags.add(pathSegments[SEGMENTS.FEATURE_CLASS]);
       break;
     case "feats":
-      tags.add(pathSegments[SEGMENTS.FEAT_TYPE]);
+      const featType = pathSegments[SEGMENTS.FEAT_TYPE];
+      tags.add(featType);
+      if (featType === "class") {
+        const featClass = pathSegments[SEGMENTS.FEAT_CLASS];
+        if (featClass !== "_shared") {
+          tags.add(featClass);
+        }
+      }
       break;
     case "items":
       tags.add(pathSegments[SEGMENTS.ITEM_TYPE]);

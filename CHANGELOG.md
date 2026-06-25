@@ -3,7 +3,13 @@
 - **New Animations**
   - Hurtling Stone (@Chasarooni)
 
+## 0.0.4
+
+- Added temporary files to show the categories on github
+- Added parsing for what class a feat is from
+
 ## 0.0.3
+
 - Tested adding an animation
 - Updated the animation list
 - Added @ChasarooniZ as a CODEOWNER
