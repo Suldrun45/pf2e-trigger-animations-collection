@@ -3,8 +3,8 @@
 <!--- Downloads @ Latest Badge -->
 <!--- replace <user>/<repo> with your username/repository -->
 
-- ![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/pf2e-trigger-animations-collection/total?color=5e0000&label=All%20Downloads)
-  ![Latest Release Download Count](https://img.shields.io/github/downloads/ChasarooniZ/pf2e-trigger-animations-collection/latest/module.zip)
+![All Downloads](https://img.shields.io/github/downloads/ChasarooniZ/pf2e-trigger-animations-collection/total?color=5e0000&label=All%20Downloads)
+![Latest Release Download Count](https://img.shields.io/github/downloads/ChasarooniZ/pf2e-trigger-animations-collection/latest/module.zip)
 
 <!--- Forge Bazaar Install % Badge -->
 <!--- replace <your-module-name> with the `name` in your manifest -->
