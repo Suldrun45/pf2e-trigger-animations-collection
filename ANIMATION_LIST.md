@@ -3,9 +3,9 @@
 **Icon Guide**
 
 - 🆓 Supports JB2a Free
+- 💲 JB2a Patreon only
 - 🔊 Has Sounds
-- 🔇 No Sound
--
+- 🔇 No Sounds
 
 - ✍🏼 Created by
 - 🛠️ Updated By
