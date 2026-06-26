@@ -3,6 +3,10 @@
 - **New Animations**
   - Hurtling Stone (@Chasarooni)
 
+## 0.0.6
+
+- Added a game setting to check if jb2a patreon is active
+
 ## 0.0.5
 
 - Linked to a quick and dirty LLM created HTML form (to make formatting a bit easier for the average non git user)
