@@ -75,7 +75,7 @@
 
 #### Cantrips
 
-- Hurtling Stone 🆓🔇 (✍🏼 @Chasarooni)
+- Hurtling Stone 🔇🆓 (@Chasarooni)
 
 #### Focus Spells
 
