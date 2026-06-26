@@ -145,7 +145,7 @@
 
 #### 7th Rank Spells
 
-- Void Scour 💲🔊 (✍🏼 @Chasarooni)
+- Void Scour 🆓🔊 (✍🏼 @Chasarooni)
 
 #### 8th Rank Spells
 
