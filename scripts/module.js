@@ -1,4 +1,4 @@
-import { setupSettings } from "./settings.js";
+import { handlePersistenceSettingSync, setupSettings } from "./settings.js";
 
 export const MODULE_ID = "pf2e-trigger-animations-trove";
 Hooks.once("init", async function () {
@@ -7,6 +7,7 @@ Hooks.once("init", async function () {
 
 Hooks.once("ready", async function () {
   updateModulesEnabledSettings();
+  handlePersistenceSettingSync();
 });
 
 function updateModulesEnabledSettings() {

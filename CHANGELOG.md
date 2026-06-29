@@ -3,6 +3,10 @@
 - **New Animations**
   - Buzzing Bites, Hurtling Stone, Scatter Scree, Void Scour (@Chasarooni)
 
+## 0.0.11
+
+- Modified persistence settings simpler to access hidden settings to make triggers a bit smaller
+
 ## 0.0.10
 
 - Fixed persistence setting being not visible
