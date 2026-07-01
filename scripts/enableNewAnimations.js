@@ -33,7 +33,9 @@ export async function askToAddNewAnimationsDialog() {
         "trigger-animations",
         "data",
       );
-      triggerData.enabled = [...new Set(triggerData?.enabled.concat(idList))];
+      triggerData.enabled = [
+        ...new Set((triggerData?.enabled ?? []).concat(idList)),
+      ];
       await triggerAnimations.api.db.setFlag(
         "trigger-animations",
         "data",

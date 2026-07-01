@@ -4,6 +4,10 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.0.17
+
+- Fixed issue again
+
 ## 0.0.16
 
 - Fixed another issue with animation enabler
