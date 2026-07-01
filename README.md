@@ -19,16 +19,13 @@ Pack of animations for Trigger Animations! See the fully supported list [here](/
     - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
     - **Future Vauxs Specific Asset Pack** (has yet to be released)
 - **Animation Qualities**
-  - **minimal** - Maybe just like SFX or something
-  - **low** - 1 animation ~ 1 sfx
-  - **medium** - ~3 animations / ~3 sfx --- This is the aim for the majority of animations
-  - **High** - more of them
-  - **persistent** - Must be tied to the settings below
+  - **Minimal** - 1 animation ~ 1 sfx (or SFX only)
+  - **Low** - Medium but with no persistent and possibly toned down a bit if it's a lot
+  - **Medium** - ~3 animations / ~3 sfx + Persistent Templates allowed (as long its not a ton)
+    - _This is the aim for the majority of animations_
+  - **High** - Medium but with Persistent Effects allowed
 - **Relevant Game Settings**
   _Predicate parts of your animations off of these to add full compatibility_
-  - **Persistent**
-    - `persistent.templates` - Enables animations which should stick around (IE `Scatter Scree` to persist on screen)
-    - `persistent.effects` - Enables persistence for effects (wouldn't recommend this one, but at least opening up the option)
   - **Module Ownership**
     - `module-active.jb2a-patreon` - Checks if the user has JB2a Patreon installed and active
 
