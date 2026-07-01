@@ -41,7 +41,7 @@ export async function askToAddNewAnimationsDialog() {
         "data",
         triggerData,
       );
-      ui.notifications.info("Thew New Animations have been enabled");
+      ui.notifications.info("These new animations have been enabled");
     }
   }
 }
