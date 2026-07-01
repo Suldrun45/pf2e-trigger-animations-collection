@@ -4,6 +4,14 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.0.13
+
+- Removed settings in this module which are no longer used
+
+## 0.0.12
+
+- Adjusted animations in the module to match new `Trigger Animation` settings
+
 ## 0.0.11
 
 - Modified persistence settings simpler to access hidden settings to make triggers a bit smaller

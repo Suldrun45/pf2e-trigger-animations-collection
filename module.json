@@ -1,7 +1,7 @@
 {
   "id": "pf2e-trigger-animations-trove",
   "title": "Trigger Animation Trove (PF2e / SF2e)",
-  "description": "",
+  "description": "Animations for the Trigger Animation module specifically for the Pathfinder 2e and Starfinder 2e systems",
   "version": "#{VERSION}#",
   "library": "false",
   "compatibility": {
@@ -34,7 +34,10 @@
         "id": "trigger-animations",
         "name": "Trigger Animations",
         "type": "module",
-        "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json"
+        "manifest": "https://raw.githubusercontent.com/MrVauxs/trigger-animations/latest/releases/module.json",
+        "compatibility": {
+          "minimum": "0.0.6"
+        }
       }
     ],
     "recommends": [
