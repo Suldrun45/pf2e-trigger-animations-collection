@@ -43,6 +43,7 @@
       - [Skill Feats](#skill-feats)
       - [Archetype Feats](#archetype-feats)
     - [Strikes](#strikes)
+      - [Unarmed Strikes](#unarmed-strikes)
       - [Weapons](#weapons)
         - [Group](#group)
         - [Base](#base)
@@ -119,6 +120,8 @@
 
 ### Conditions
 
+- Persistent Damage 🔇🆓 (✍🏼 @Chasarooni)
+
 ### Feats
 
 #### Class Feats
@@ -130,6 +133,10 @@
 #### Archetype Feats
 
 ### Strikes
+
+#### Unarmed Strikes
+
+- Claw 🔇🆓 (✍🏼 @Chasarooni)
 
 #### Weapons
 
