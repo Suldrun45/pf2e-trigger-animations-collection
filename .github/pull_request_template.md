@@ -8,6 +8,7 @@ _Note you don't need to literally check these off, just confirm you followed the
 - **Tagging.** Animation is properly tagged?
 - **Repo Folder.** It's in the correct github folder?
 - **Format.** All links to Sounds or Animations use the Sequencer DB format and follow formatting the guidelines in the readme?
+- **Quality Support.** The animation is set to **Local** for its play, and is setup such that it adheres to the general quality guidelines?
 
 ## Video of it in use
 
