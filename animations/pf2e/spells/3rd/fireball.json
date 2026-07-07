@@ -222,6 +222,9 @@
       "inputs": {
         "preload": {
           "value": true
+        },
+        "local": {
+          "value": true
         }
       }
     },

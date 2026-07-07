@@ -25,7 +25,15 @@
         "x": 878.877335693936,
         "y": -6.57017568275819
       },
-      "id": "toTtIlwdJPKNhZJK"
+      "id": "toTtIlwdJPKNhZJK",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
     },
     {
       "type": "effect",

@@ -4,6 +4,10 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.1.1
+
+- Updated all animations to use `preload` and `local` in their `play` nodes
+
 ## 0.1.0
 
 - **New**
