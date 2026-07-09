@@ -21,6 +21,7 @@
   - [Table Of Contents- Animation List](#table-of-contents--animation-list)
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
+      - [Barbarian](#barbarian)
     - [Spells](#spells)
       - [Cantrips](#cantrips)
       - [Focus Spells](#focus-spells)
@@ -79,6 +80,10 @@
 ## PF2e
 
 ### Class Features
+
+#### Barbarian
+
+- Rage 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Spells
 
@@ -170,6 +175,9 @@
 
 ##### Group
 
+- Bomb 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Bow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
+- Crossbow 🔊🆓 (✍🏼 @Vauxs, @Chasarooni)
 - Polearm 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Base

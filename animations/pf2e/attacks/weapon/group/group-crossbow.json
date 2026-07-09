@@ -1,0 +1,345 @@
+{
+  "name": "Group: Crossbow",
+  "folder": "Weapons",
+  "priority": -100,
+  "tags": [
+    "attack-roll"
+  ],
+  "nodes": [
+    {
+      "id": "zwvWO50CXI44ObmF",
+      "position": {
+        "x": 315.3333154823181,
+        "y": 194.66668701171875
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "crossbow"
+        }
+      },
+      "custom": {
+        "outputs": {
+          "9GG5oGEm2a9RAiZ5": {
+            "id": "9GG5oGEm2a9RAiZ5",
+            "input": "outcome",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mpa5CCtLfa7bjI71:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 981.7776878222768,
+        "y": -11.629621659793969
+      },
+      "id": "9Ny9laSD1AJY2y4E",
+      "inputs": {
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        },
+        "origin": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:qHvhdFqXb77u8E8o"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "e9lcLUsF8nmzdJg7:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 575.3332973328681,
+        "y": 266.0000107216416
+      },
+      "id": "mpa5CCtLfa7bjI71",
+      "custom": {
+        "outputs": {
+          "qHvhdFqXb77u8E8o": {
+            "id": "qHvhdFqXb77u8E8o",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "sR6Cy5NKJKuZpmQg": {
+            "id": "sR6Cy5NKJKuZpmQg",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "zwvWO50CXI44ObmF:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "4gZJ8Gm9UjlhMc4G:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 982.2964527266994,
+        "y": 129.6296985915386
+      },
+      "id": "kkkNTCli7BCyXs18",
+      "inputs": {
+        "preload": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "position": {
+        "x": 1267.5555584358076,
+        "y": -163.99815750230124
+      },
+      "id": "e9lcLUsF8nmzdJg7",
+      "outs": {
+        "out": {
+          "connection": "HrjxmdV9fn6KEOE0:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.bolt.physical.orange"
+        }
+      },
+      "position": {
+        "x": 1496.5926746274013,
+        "y": -168.26844370296433
+      },
+      "id": "HrjxmdV9fn6KEOE0",
+      "outs": {
+        "out": {
+          "connection": "2bt2cdnyg4ntLfaK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "aim",
+      "state": "stretchTo",
+      "inputs": {
+        "effect": {
+          "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
+        },
+        "towards": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        },
+        "missed": {
+          "connection": "2bt2cdnyg4ntLfaK:outputs:boolean"
+        }
+      },
+      "position": {
+        "x": 2023.465668183612,
+        "y": 42.45157051876333
+      },
+      "id": "mzztRWLWfGStDgf8",
+      "outs": {
+        "out": {
+          "connection": "gwoJVDU0SJcnKJrd:ins:in"
+        }
+      }
+    },
+    {
+      "type": "massloop",
+      "position": {
+        "x": 670.0002040592956,
+        "y": 54.888896970017754
+      },
+      "id": "4gZJ8Gm9UjlhMc4G",
+      "inputs": {
+        "targets": {
+          "connection": "zwvWO50CXI44ObmF:outputs:targets"
+        },
+        "sources": {
+          "connection": "zwvWO50CXI44ObmF:outputs:sources"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "9Ny9laSD1AJY2y4E:ins:in"
+        },
+        "outAfter": {
+          "connection": "kkkNTCli7BCyXs18:ins:in"
+        }
+      }
+    },
+    {
+      "type": "list-contains",
+      "position": {
+        "x": 1749.2806329087025,
+        "y": -6.137475745046345
+      },
+      "id": "2bt2cdnyg4ntLfaK",
+      "inputs": {
+        "entry": {
+          "connection": "zwvWO50CXI44ObmF:outputs:9GG5oGEm2a9RAiZ5"
+        },
+        "list": {
+          "connection": "Kfd0h5Nepcqvhmyb:outputs:list"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mzztRWLWfGStDgf8:ins:in"
+        }
+      },
+      "state": "boolean"
+    },
+    {
+      "type": "list-value",
+      "position": {
+        "x": 1505.9046807058999,
+        "y": 18.95236015319847
+      },
+      "id": "Kfd0h5Nepcqvhmyb",
+      "inputs": {
+        "entry": {
+          "value": "failure,criticalFailure"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2387.3397435897436,
+        "y": 53.41666666666674
+      },
+      "id": "gwoJVDU0SJcnKJrd",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.ranged.crossbow.strike.01"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "arSAxn0KkOsvWOK8:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        },
+        "toTarget": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "position": {
+        "x": 2699.916666666666,
+        "y": 58.31666666666683
+      },
+      "id": "arSAxn0KkOsvWOK8",
+      "outs": {
+        "out": {
+          "connection": "yypawNuJ9S2LEHjo:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-spatial",
+      "inputs": {
+        "sound": {
+          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
+        },
+        "alwaysForGMs": {
+          "value": true
+        },
+        "panSound": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 2958.916666666666,
+        "y": 60.416666666666856
+      },
+      "id": "yypawNuJ9S2LEHjo",
+      "outs": {
+        "out": {
+          "connection": "9utUoD9eFv6Wf6a0:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-volume",
+      "inputs": {
+        "sound": {
+          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
+        },
+        "volume": {
+          "value": 0.5
+        }
+      },
+      "position": {
+        "x": 3247.666666666666,
+        "y": 56.66666666666681
+      },
+      "id": "9utUoD9eFv6Wf6a0",
+      "outs": {
+        "out": {
+          "connection": "h8QUgpsxBfvh2ouu:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
+        },
+        "delayMin": {
+          "value": 1000
+        }
+      },
+      "position": {
+        "x": 3467,
+        "y": 48.25
+      },
+      "id": "h8QUgpsxBfvh2ouu"
+    }
+  ],
+  "id": "NBuy122oCnbHZ8qj",
+  "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>"
+}
