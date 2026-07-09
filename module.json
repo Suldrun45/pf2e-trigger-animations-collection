@@ -46,6 +46,9 @@
         "name": "GGG: Sequencer Sound DB Collection",
         "type": "module",
         "reason": "For SFX for the animations",
+        "compatibility": {
+          "minimum": "0.0.13"
+        },
         "manifest": "https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection/releases/latest/download/module.json"
       }
     ]
