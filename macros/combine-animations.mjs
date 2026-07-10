@@ -11,7 +11,7 @@ const SEGMENTS = {
   FEAT_TYPE: 2,
   ATTACK_TYPE: 2,
   FEATURE_CLASS: 2,
-  ITEM_TYPE: 2,
+  EQUIPMENT_TYPE: 2,
   FEAT_CLASS: 3,
 };
 const CATEGORIES = {
@@ -20,8 +20,9 @@ const CATEGORIES = {
   conditions: "Conditions",
   creature_actions: "Creature Actions",
   feats: "Feats",
-  items: "Items",
+  equipment: "Equipment",
   spells: "Spells",
+  helpers: "Helpers",
 };
 const MODULE_TAG = "PF2e Trove";
 function getTagsAndCategory({ path, originalTags }) {
@@ -37,7 +38,8 @@ function getTagsAndCategory({ path, originalTags }) {
   tags.add(system);
 
   //Category
-  const category = pathSegments[SEGMENTS.CATEGORY];
+  const category =
+    system === "helpers" ? CATEGORIES.helpers : pathSegments[SEGMENTS.CATEGORY];
   tags.add(category);
   const categoryName = CATEGORIES[category];
 
@@ -58,8 +60,8 @@ function getTagsAndCategory({ path, originalTags }) {
         }
       }
       break;
-    case "items":
-      tags.add(pathSegments[SEGMENTS.ITEM_TYPE]);
+    case "equipment":
+      tags.add(pathSegments[SEGMENTS.EQUIPMENT_TYPE]);
     case "spells":
       tags.add(pathSegments[SEGMENTS.SPELL_TYPE]);
       break;
