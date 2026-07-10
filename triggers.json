@@ -1,5 +1,229 @@
 [
   {
+    "name": "Damage Roll",
+    "folder": "Animations",
+    "priority": 0,
+    "tags": ["pf2e", "sf2e"],
+    "id": "q3IAcGe2rOC2vU2H",
+    "nodes": [
+      {
+        "type": "execute-animation",
+        "position": { "x": 748.4414848662254, "y": 34.62226598527684 },
+        "id": "zJiAEHL0uEXPz5FL",
+        "custom": {
+          "inputs": {
+            "5E6lWUteSYs0PMsw": {
+              "id": "5E6lWUteSYs0PMsw",
+              "label": "Outcome",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            },
+            "1NXZ8AH8e79Nfdaq": {
+              "id": "1NXZ8AH8e79Nfdaq",
+              "label": "Is Reroll",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            },
+            "DJOBvYXq1vUYUGlT": {
+              "id": "DJOBvYXq1vUYUGlT",
+              "label": "Animation List",
+              "slug": "input",
+              "isArray": false,
+              "type": "text"
+            },
+            "7jbpC5aYKFXGZCzz": {
+              "id": "7jbpC5aYKFXGZCzz",
+              "label": "Slugs",
+              "slug": "input",
+              "isArray": true,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "actor": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:E1vqno17QixYwz6H"
+          },
+          "sources": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:E1vqno17QixYwz6H"
+          },
+          "1NXZ8AH8e79Nfdaq": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:4gRKcmt47DNs76Ho"
+          },
+          "5E6lWUteSYs0PMsw": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:kbSXzilDA6JJxUl2"
+          },
+          "options": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:pL6A654teqA3LsOh"
+          },
+          "item": { "connection": "SD3dS8jXMDz7XxE3:outputs:tVhVJWMBJ499e5SK" },
+          "targets": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:OzNsTvPNKm0ZCjEd"
+          },
+          "7SfhEtG5haoHS4rj": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:aOc4NvEUBebGCzjx"
+          },
+          "name": { "value": "damage-roll:handler" },
+          "DCwOHMztrOirJsxN": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:UTudrLq5XiLiMSv9"
+          },
+          "DJOBvYXq1vUYUGlT": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:aOc4NvEUBebGCzjx"
+          },
+          "7jbpC5aYKFXGZCzz": {
+            "connection": "SD3dS8jXMDz7XxE3:outputs:UTudrLq5XiLiMSv9"
+          }
+        }
+      },
+      {
+        "type": "hook-called-event",
+        "position": { "x": -480, "y": 8 },
+        "id": "NVw98hipCZjZu9I0",
+        "custom": {
+          "outputs": {
+            "6ssDORYrtuDo5mk4": {
+              "id": "6ssDORYrtuDo5mk4",
+              "label": "Message",
+              "slug": "output",
+              "isArray": false,
+              "type": "any"
+            }
+          }
+        },
+        "inputs": { "name": { "value": "createChatMessage" } },
+        "outs": { "out": { "connection": "03VpfBEpU0Ke7ZoU:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": -232, "y": 9 },
+        "id": "03VpfBEpU0Ke7ZoU",
+        "custom": {
+          "inputs": {
+            "n8veNJpXKVHl97qk": {
+              "id": "n8veNJpXKVHl97qk",
+              "label": "Message",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          },
+          "outputs": {
+            "PKCr5b5ZcMMpMMo6": {
+              "id": "PKCr5b5ZcMMpMMo6",
+              "label": "isDamageRoll",
+              "slug": "output",
+              "isArray": false,
+              "type": "boolean"
+            }
+          }
+        },
+        "inputs": {
+          "n8veNJpXKVHl97qk": {
+            "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg.isDamageRoll;\n\nreturn [\n  { type: \"boolean\", value: isDamageRoll },\n];"
+          }
+        },
+        "outs": { "out": { "connection": "xW4HXf7HurL1mvYp:ins:in" } }
+      },
+      {
+        "type": "execute-script",
+        "position": { "x": 335, "y": 16 },
+        "id": "SD3dS8jXMDz7XxE3",
+        "custom": {
+          "inputs": {
+            "gWhFa3i4qcRg2iYP": {
+              "id": "gWhFa3i4qcRg2iYP",
+              "label": "Message",
+              "slug": "input",
+              "isArray": false,
+              "type": "any"
+            }
+          },
+          "outputs": {
+            "tVhVJWMBJ499e5SK": {
+              "id": "tVhVJWMBJ499e5SK",
+              "label": "Item",
+              "slug": "output",
+              "isArray": false,
+              "type": "item"
+            },
+            "pL6A654teqA3LsOh": {
+              "id": "pL6A654teqA3LsOh",
+              "label": "Roll Options",
+              "slug": "output",
+              "isArray": true,
+              "type": "text"
+            },
+            "kbSXzilDA6JJxUl2": {
+              "id": "kbSXzilDA6JJxUl2",
+              "label": "Outcome",
+              "slug": "output",
+              "isArray": false,
+              "type": "outcome"
+            },
+            "4gRKcmt47DNs76Ho": {
+              "id": "4gRKcmt47DNs76Ho",
+              "label": "Is Reroll",
+              "slug": "output",
+              "isArray": false,
+              "type": "boolean"
+            },
+            "aOc4NvEUBebGCzjx": {
+              "id": "aOc4NvEUBebGCzjx",
+              "label": "Animation Name",
+              "slug": "output",
+              "isArray": false,
+              "type": "text"
+            },
+            "E1vqno17QixYwz6H": {
+              "id": "E1vqno17QixYwz6H",
+              "label": "Token",
+              "slug": "output",
+              "isArray": false,
+              "type": "target"
+            },
+            "OzNsTvPNKm0ZCjEd": {
+              "id": "OzNsTvPNKm0ZCjEd",
+              "label": "Targets",
+              "slug": "output",
+              "isArray": true,
+              "type": "target"
+            },
+            "UTudrLq5XiLiMSv9": {
+              "id": "UTudrLq5XiLiMSv9",
+              "label": "Damage Slugs",
+              "slug": "output",
+              "isArray": true,
+              "type": "text"
+            }
+          }
+        },
+        "inputs": {
+          "gWhFa3i4qcRg2iYP": {
+            "connection": "NVw98hipCZjZu9I0:outputs:6ssDORYrtuDo5mk4"
+          },
+          "script": {
+            "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst msg = inputs[0];\n\nconst isDamageRoll = msg?.isDamageRoll;\nconst item = msg?.item;\nconst token = msg?.token;\nconst rollOptions = msg?.flags?.pf2e?.context?.options;\nconst outcome = msg?.flags?.pf2e?.context?.outcome;\nconst isReroll = msg?.isReroll;\nconst dmgSlugs = msg?.flags?.pf2e?.dice?.map((d) => d?.slug);\nconst modSlugs = msg?.flags?.pf2e?.modifiers?.map((d) => d?.slug);\nconst slugs = [item?.slug, dmgSlugs, modSlugs]?.flat();\nconst animationList = slugs?.map((slug) => `damage-roll:${slug}`);\n\nconst animationName = animationList?.join(\", \");\nconst toolbeltTargets = msg?.flags?.[\"pf2e-toolbelt\"]?.targetHelper?.targets.map(uuid => canvas.tokens.placeables.find(t => t?.document?.uuid === uuid))\nconst targets = toolbeltTargets?.length > 0 ? toolbeltTargets : [msg?.target]\n\nreturn [\n  { type: \"item\", value: item },\n  { type: \"text\", isArray: true, value: rollOptions },\n  { type: \"outcome\", value: outcome },\n  { type: \"boolean\", value: isReroll },\n  { type: \"text\", value: animationName },\n  { type: \"target\", value: token },\n  { type: \"target\", isArray: true, value: targets },\n  { type: \"text\", isArray: true, value: slugs}\n];"
+          }
+        },
+        "outs": { "out": { "connection": "zJiAEHL0uEXPz5FL:ins:in" } }
+      },
+      {
+        "type": "split-boolean",
+        "inputs": {
+          "input": { "connection": "03VpfBEpU0Ke7ZoU:outputs:PKCr5b5ZcMMpMMo6" }
+        },
+        "position": { "x": 90, "y": 29.25 },
+        "id": "xW4HXf7HurL1mvYp",
+        "outs": { "true": { "connection": "SD3dS8jXMDz7XxE3:ins:in" } }
+      }
+    ]
+  },
+  {
     "name": "Effect / Condition Badge Update",
     "folder": "Animations",
     "priority": 0,
