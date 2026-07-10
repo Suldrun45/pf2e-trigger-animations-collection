@@ -13,7 +13,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "bomb"
+          "value": "trove-attack:bomb"
         }
       },
       "custom": {

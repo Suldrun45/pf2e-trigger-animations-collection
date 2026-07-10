@@ -1,8 +1,8 @@
 {
-  "name": "Greatpick",
-  "folder": "Weapons",
-  "priority": -50,
-  "tags": ["attack-roll"],
+  "name": "Group: Shield",
+  "folder": "Attacks",
+  "priority": -100,
+  "tags": ["attack-roll", "PF2e Trove", "pf2e", "attacks", "weapon"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -13,7 +13,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "trove-attack:greatpick"
+          "value": "shield"
         }
       },
       "custom": {
@@ -80,13 +80,13 @@
             "isArray": false,
             "type": "text"
           },
-          "QPWf9ZnV9bidhNIQ": {
-            "id": "QPWf9ZnV9bidhNIQ",
-            "input": "system.damage.die",
-            "label": "Damage Die",
+          "rSAfX2m6zo8bHwea": {
+            "id": "rSAfX2m6zo8bHwea",
+            "input": "system.bulk.value",
+            "label": "Bulk",
             "slug": "path",
             "isArray": false,
-            "type": "text"
+            "type": "number"
           }
         }
       },
@@ -104,8 +104,8 @@
     {
       "type": "play",
       "position": {
-        "x": 1027.963104861186,
-        "y": 157.43925146542256
+        "x": 988.963104861186,
+        "y": 133.43925146542256
       },
       "id": "kkkNTCli7BCyXs18",
       "inputs": {
@@ -129,21 +129,15 @@
         },
         "offset": {
           "value": {
-            "x": -2,
+            "x": -1.25,
             "y": 0
           }
-        },
-        "local": {
-          "value": true
         },
         "gridUnits": {
           "value": true
         },
-        "bindRotation": {
-          "value": false
-        },
-        "bindScale": {
-          "value": false
+        "local": {
+          "value": true
         }
       },
       "position": {
@@ -164,12 +158,12 @@
           "connection": "9Ny9laSD1AJY2y4E:outputs:effect"
         },
         "file": {
-          "value": "jb2a.melee_generic.piercing.two_handed"
+          "value": "jb2a.melee_attack.06.shield.01"
         }
       },
       "position": {
-        "x": 1513.4814933903276,
-        "y": -163.82395962390342
+        "x": 1597.925937834772,
+        "y": -166.6017374016812
       },
       "id": "HrjxmdV9fn6KEOE0",
       "outs": {
@@ -202,8 +196,8 @@
         }
       },
       "position": {
-        "x": 1769.9101126280566,
-        "y": 95.56268162987453
+        "x": 1998.465668183612,
+        "y": 47.45157051876333
       },
       "id": "mzztRWLWfGStDgf8",
       "outs": {
@@ -239,8 +233,8 @@
     {
       "type": "list-contains",
       "position": {
-        "x": 1531.7250972174347,
-        "y": 216.75140461378385
+        "x": 1763.947319439657,
+        "y": 257.86251572489493
       },
       "id": "2bt2cdnyg4ntLfaK",
       "inputs": {
@@ -261,8 +255,8 @@
     {
       "type": "list-value",
       "position": {
-        "x": 1520.7936502319958,
-        "y": 124.95237201127236
+        "x": 1528.5714280097736,
+        "y": 281.619038677939
       },
       "id": "Kfd0h5Nepcqvhmyb",
       "inputs": {
@@ -274,8 +268,8 @@
     {
       "type": "scale",
       "position": {
-        "x": 2055.7777746553347,
-        "y": 83.11108389714775
+        "x": 2291.33333021089,
+        "y": 45.33330611936992
       },
       "id": "7eJYxPPCfZY9S2YP",
       "inputs": {
@@ -292,25 +286,66 @@
       "state": "object",
       "outs": {
         "out": {
-          "connection": "f0tjRItIgB2XVcyx:ins:in"
+          "connection": "h0p6mid1HU99KQJ9:ins:in"
         }
       }
     },
     {
       "type": "sound",
       "position": {
-        "x": 1856.8119658119658,
-        "y": -109.83333333333337
+        "x": 2289.6452991452984,
+        "y": -240.94444444444434
       },
-      "id": "f0tjRItIgB2XVcyx",
+      "id": "wewKUsT5boOGrmqF",
       "inputs": {
         "file": {
-          "value": "ggg-sfx.melee.polearm.strike.01.pierce"
+          "connection": "h0p6mid1HU99KQJ9:outputs:RgX9zjQqGgUUnOA7"
         }
       },
       "outs": {
         "out": {
-          "connection": "rdVdjdw3xI66C2Ib:ins:in"
+          "connection": "PVMRcxbDukikURFm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1992.3888888888887,
+        "y": -243.44444444444434
+      },
+      "id": "h0p6mid1HU99KQJ9",
+      "custom": {
+        "inputs": {
+          "wiRhScxMX5zFTE5A": {
+            "id": "wiRhScxMX5zFTE5A",
+            "label": "Bulk",
+            "slug": "input",
+            "isArray": false,
+            "type": "number"
+          }
+        },
+        "outputs": {
+          "RgX9zjQqGgUUnOA7": {
+            "id": "RgX9zjQqGgUUnOA7",
+            "label": "File",
+            "slug": "output",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst bulk = inputs[0];\nconst file = Number(bulk) >= 3 ? 'ggg-sfx.melee.bludgeoning.strike.two-hand.01' : 'ggg-sfx.melee.bludgeoning.strike.one-hand.01'\nreturn [{type: \"text\", value: file}];"
+        },
+        "wiRhScxMX5zFTE5A": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:rSAfX2m6zo8bHwea"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "wewKUsT5boOGrmqF:ins:in"
         }
       }
     },
@@ -318,19 +353,86 @@
       "type": "snd-volume",
       "inputs": {
         "sound": {
-          "connection": "f0tjRItIgB2XVcyx:outputs:sound"
+          "connection": "wewKUsT5boOGrmqF:outputs:sound"
         },
         "volume": {
           "value": 0.5
         }
       },
       "position": {
-        "x": 2181.333333333333,
-        "y": -272.97222222222223
+        "x": 2581.055555555556,
+        "y": -250.22619047619048
       },
-      "id": "rdVdjdw3xI66C2Ib"
+      "id": "PVMRcxbDukikURFm",
+      "outs": {
+        "out": {
+          "connection": "rreJMMvuTqGYXdYG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "wewKUsT5boOGrmqF:outputs:sound"
+        },
+        "delayMin": {
+          "value": 1000
+        }
+      },
+      "position": {
+        "x": 2802.166666666667,
+        "y": -252.44841269841243
+      },
+      "id": "rreJMMvuTqGYXdYG",
+      "outs": {
+        "out": {
+          "connection": "WzzVCqvsNZYlkUyu:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "wewKUsT5boOGrmqF:outputs:sound"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        }
+      },
+      "position": {
+        "x": 3082.369047619047,
+        "y": -254.99682539682544
+      },
+      "id": "WzzVCqvsNZYlkUyu",
+      "outs": {
+        "out": {
+          "connection": "dhkTmfE97Gqm4laS:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-spatial",
+      "inputs": {
+        "sound": {
+          "connection": "wewKUsT5boOGrmqF:outputs:sound"
+        },
+        "alwaysForGMs": {
+          "value": true
+        },
+        "panSound": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 3309.97619047619,
+        "y": -257.32539682539687
+      },
+      "id": "dhkTmfE97Gqm4laS"
     }
   ],
-  "description": "<p><em>Made by @Chasarooni</em></p>",
-  "id": "Xg3Vj7Pakwt2vZvf"
+  "id": "tJXlDnvBUVkKIsrE",
+  "description": "<p><em>Made by @Chasarooni</em></p>"
 }

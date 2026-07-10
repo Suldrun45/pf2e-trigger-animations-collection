@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "dying,update:dying"
+          "value": "condition:dying,update:dying"
         }
       }
     },

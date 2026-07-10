@@ -13,7 +13,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "spell-effect-guidance"
+          "value": "effect:spell-effect-guidance"
         }
       },
       "outs": {

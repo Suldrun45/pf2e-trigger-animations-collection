@@ -13,7 +13,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "polearm"
+          "value": "trove-attack:polearm"
         }
       },
       "custom": {

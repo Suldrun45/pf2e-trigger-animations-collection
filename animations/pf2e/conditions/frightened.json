@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "frightened,update:frightened"
+          "value": "condition:frightened,update:frightened"
         }
       }
     },

@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "slowed,update:slowed"
+          "value": "condition:slowed,update:slowed"
         }
       }
     },

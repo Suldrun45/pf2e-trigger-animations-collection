@@ -1,0 +1,137 @@
+{
+  "name": "Reload: Crossbow (Group)",
+  "folder": "Equipment",
+  "priority": -100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "g0I03xkXxHkscoUJ",
+      "position": {
+        "x": 247,
+        "y": 208
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "reload:crossbow"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Cx6Yr3QzcGgQlX8i:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 756.9230769230769,
+        "y": 220.5
+      },
+      "id": "GvONb7qWr07VO2lo",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.equipment.weapons.crossbow.load.01"
+        },
+        "name": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:ywq283M5rtzgAcz3"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "1oM2eRY1OHOR8FQB:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "location": {
+          "connection": "g0I03xkXxHkscoUJ:outputs:sources"
+        }
+      },
+      "position": {
+        "x": 1081,
+        "y": 209.14999999999998
+      },
+      "id": "1oM2eRY1OHOR8FQB",
+      "outs": {
+        "out": {
+          "connection": "zh5rnHx2bv1cJQ8g:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-spatial",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        },
+        "alwaysForGMs": {
+          "value": true
+        },
+        "panSound": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1334,
+        "y": 200.25
+      },
+      "id": "zh5rnHx2bv1cJQ8g",
+      "outs": {
+        "out": {
+          "connection": "KKe9CVOwO0N6EP8b:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "g0I03xkXxHkscoUJ:outputs:item"
+        }
+      },
+      "position": {
+        "x": 511,
+        "y": 231.14999999999998
+      },
+      "id": "Cx6Yr3QzcGgQlX8i",
+      "custom": {
+        "outputs": {
+          "ywq283M5rtzgAcz3": {
+            "id": "ywq283M5rtzgAcz3",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "GvONb7qWr07VO2lo:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1569.923076923077,
+        "y": 199.5
+      },
+      "id": "KKe9CVOwO0N6EP8b",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    }
+  ],
+  "id": "DdZD89Ax28EyU2CU"
+}

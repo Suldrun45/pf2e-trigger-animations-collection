@@ -11,6 +11,19 @@
 
 Pack of animations for Trigger Animations! See the fully supported list [here](/ANIMATION_LIST.md)
 
+### Trove Animation Quirks
+
+The following are triggers specific to Trigger Animation Trove, for all other triggers see [Trigger Animations](https://wiki.mrvauxs.net/reference/trigger-animations/#included-pf2e-triggers)
+
+| Event                           | Original Trigger                                   | Trove Trigger                                            |
+| ------------------------------- | -------------------------------------------------- | -------------------------------------------------------- |
+| Attack Rolled                   | `attack:item-slug`                                 | `trove-attack:item-slug`                                 |
+| Check Rolled                    | `check:item-slug`                                  | `trove-check:item-slug`                                  |
+| Damage Taken                    | `(damage\|healing\|persistent\|negated):item-slug` | `trove-(damage\|healing\|persistent\|negated):item-slug` |
+| Reload                          | `none`                                             | `reload:weapon-slug`                                     |
+| Effect / Condition Badge Update | `none`                                             | `update:item-slug`                                       |
+| Roll Option Update              | `none`                                             | `update:item-slug`                                       |
+
 ## Animation Submission Guidelines
 
 - **Acceptable Sources**

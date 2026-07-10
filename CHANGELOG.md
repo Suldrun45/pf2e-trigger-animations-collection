@@ -1,8 +1,18 @@
 ## Unreleased
 
 - **New Animations**
-  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage (@Chasarooni)
+  - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape (@Chasarooni)
   - Fireball (@ChazPls)
+
+## 0.2.0
+
+- **New**
+  - Added two new animation triggers
+    - `Reload` uses `reload:slug`
+    - `Roll Option Update` uses `update:slug` where `slug` is the slug of the item with the Roll Option
+- **Update**
+  - Updated to `Trigger Animations` version `0.3.0`
+  - Updated all animations to the new `Trigger Animations` version
 
 ## 0.1.5
 

@@ -412,7 +412,7 @@
       "id": "ictQRW7Z9AdiNNAX",
       "inputs": {
         "name": {
-          "value": "stunned,update:stunned"
+          "value": "condition:stunned,update:stunned"
         }
       },
       "outs": {

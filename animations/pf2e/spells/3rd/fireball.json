@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "fireball"
+          "value": "template:fireball"
         }
       },
       "outs": {

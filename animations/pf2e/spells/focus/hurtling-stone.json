@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "hurtling-stone"
+          "value": "trove-attack:hurtling-stone"
         }
       },
       "custom": {

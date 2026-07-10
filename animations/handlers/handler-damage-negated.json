@@ -1,0 +1,127 @@
+{
+  "name": "Handler: Damage Negated",
+  "folder": "System",
+  "priority": 100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "N23TsYK70MCRp0GB",
+      "position": {
+        "x": 421.42857142857156,
+        "y": 187.14285714285722
+      },
+      "type": "animation-event",
+      "outs": {
+        "out": {
+          "connection": "asRJQi5WlQnMRFaZ:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "negated:*"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 729.9999999999995,
+        "y": 95.99999999999994
+      },
+      "id": "asRJQi5WlQnMRFaZ",
+      "custom": {
+        "outputs": {
+          "RNE8lD7qDcKIiDni": {
+            "id": "RNE8lD7qDcKIiDni",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "N23TsYK70MCRp0GB:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "m28jOepELbdbj5AW:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1275.9228781534155,
+        "y": 169.73331298828117
+      },
+      "id": "2FLcmEB1aHORVE6z",
+      "inputs": {
+        "name": {
+          "connection": "m28jOepELbdbj5AW:outputs:result"
+        },
+        "actor": {
+          "connection": "N23TsYK70MCRp0GB:outputs:actor"
+        },
+        "sources": {
+          "connection": "N23TsYK70MCRp0GB:outputs:sources"
+        },
+        "targets": {
+          "connection": "N23TsYK70MCRp0GB:outputs:targets"
+        },
+        "item": {
+          "connection": "N23TsYK70MCRp0GB:outputs:item"
+        },
+        "options": {
+          "connection": "N23TsYK70MCRp0GB:outputs:options"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 961.3332445465612,
+        "y": 101.9999389648437
+      },
+      "id": "m28jOepELbdbj5AW",
+      "custom": {
+        "inputs": {
+          "5YEY3kuRaXjzEXq8": {
+            "id": "5YEY3kuRaXjzEXq8",
+            "input": "slug",
+            "label": "slug",
+            "slug": "variable",
+            "type": "text"
+          },
+          "wzRgUtsTgpqgizLY": {
+            "id": "wzRgUtsTgpqgizLY",
+            "input": "type",
+            "label": "type",
+            "slug": "variable",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "plain": {
+          "value": "@type:@slug"
+        },
+        "5YEY3kuRaXjzEXq8": {
+          "connection": "asRJQi5WlQnMRFaZ:outputs:RNE8lD7qDcKIiDni"
+        },
+        "wzRgUtsTgpqgizLY": {
+          "value": "trove-negated"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "2FLcmEB1aHORVE6z:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "ou7RphnMW8Vh57yL"
+}

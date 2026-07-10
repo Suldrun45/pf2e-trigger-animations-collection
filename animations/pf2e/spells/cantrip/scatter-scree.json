@@ -12,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "scatter-scree"
+          "value": "template:scatter-scree"
         }
       },
       "outs": {

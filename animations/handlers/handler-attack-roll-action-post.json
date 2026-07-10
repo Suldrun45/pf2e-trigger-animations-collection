@@ -1,0 +1,237 @@
+{
+  "name": "Handler: Attack Roll/Action Post",
+  "folder": "System",
+  "priority": 100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "5Yy2lI6uhThGLmVb",
+      "position": {
+        "x": 526.7142857142857,
+        "y": 186.8571428571429
+      },
+      "type": "animation-event",
+      "custom": {
+        "outputs": {
+          "ZrHkSL40BzrijFjr": {
+            "id": "ZrHkSL40BzrijFjr",
+            "label": "Outcome",
+            "slug": "path",
+            "isArray": false,
+            "type": "any"
+          },
+          "ovMBNPEPnEjbEwll": {
+            "id": "ovMBNPEPnEjbEwll",
+            "label": "Is Reroll",
+            "slug": "path",
+            "isArray": false,
+            "type": "any"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "s4paa0j2yEYGCTLw:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "attack:*"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1601,
+        "y": 194
+      },
+      "id": "5rxwWUI3s4DYirVB",
+      "custom": {
+        "inputs": {
+          "5E6lWUteSYs0PMsw": {
+            "id": "5E6lWUteSYs0PMsw",
+            "label": "Outcome",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          },
+          "1NXZ8AH8e79Nfdaq": {
+            "id": "1NXZ8AH8e79Nfdaq",
+            "label": "Is Reroll",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
+        }
+      },
+      "inputs": {
+        "name": {
+          "connection": "kZwUhq5O0rWeJQYk:outputs:result"
+        },
+        "1NXZ8AH8e79Nfdaq": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:ovMBNPEPnEjbEwll"
+        },
+        "5E6lWUteSYs0PMsw": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:ZrHkSL40BzrijFjr"
+        },
+        "options": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:options"
+        },
+        "targets": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:targets"
+        },
+        "sources": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:sources"
+        },
+        "actor": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:actor"
+        },
+        "item": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 795.4844838076631,
+        "y": 203.89626778735547
+      },
+      "id": "s4paa0j2yEYGCTLw",
+      "custom": {
+        "outputs": {
+          "ORwOjJ9EF0ULW2b8": {
+            "id": "ORwOjJ9EF0ULW2b8",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "0aDLtYahwjpAiYC0": {
+            "id": "0aDLtYahwjpAiYC0",
+            "input": "system.group",
+            "label": "Weapon Group",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "e5aCEeEjYRi1Dau5": {
+            "id": "e5aCEeEjYRi1Dau5",
+            "input": "system.baseItem",
+            "label": "Base Item",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "5Yy2lI6uhThGLmVb:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "kZwUhq5O0rWeJQYk:ins:in"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 1032.7067948867584,
+        "y": 205.00735547283605
+      },
+      "id": "kZwUhq5O0rWeJQYk",
+      "custom": {
+        "inputs": {
+          "aessLq9h6kaS3HjI": {
+            "id": "aessLq9h6kaS3HjI",
+            "input": "a",
+            "label": "a",
+            "slug": "variable",
+            "type": "text"
+          },
+          "pKouzzHfVABGrRtd": {
+            "id": "pKouzzHfVABGrRtd",
+            "input": "b",
+            "label": "b",
+            "slug": "variable",
+            "type": "text"
+          },
+          "qgMvFU3Q8VuKnd2H": {
+            "id": "qgMvFU3Q8VuKnd2H",
+            "input": "c",
+            "label": "c",
+            "slug": "variable",
+            "type": "text"
+          },
+          "GlX9MkjYhY7mVwUt": {
+            "id": "GlX9MkjYhY7mVwUt",
+            "input": "d",
+            "label": "d",
+            "slug": "variable",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "plain": {
+          "value": "@d:@a, @d:@b, @d:@c"
+        },
+        "aessLq9h6kaS3HjI": {
+          "connection": "s4paa0j2yEYGCTLw:outputs:ORwOjJ9EF0ULW2b8"
+        },
+        "pKouzzHfVABGrRtd": {
+          "connection": "s4paa0j2yEYGCTLw:outputs:0aDLtYahwjpAiYC0"
+        },
+        "qgMvFU3Q8VuKnd2H": {
+          "connection": "s4paa0j2yEYGCTLw:outputs:e5aCEeEjYRi1Dau5"
+        },
+        "GlX9MkjYhY7mVwUt": {
+          "value": "trove-attack"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Yjf8RdS5CwzjJeVN:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 1366.923076923077,
+        "y": 191.39999999999998
+      },
+      "id": "Yjf8RdS5CwzjJeVN",
+      "custom": {
+        "inputs": {
+          "2iHRa8eZl09gayKE": {
+            "id": "2iHRa8eZl09gayKE",
+            "label": "Names",
+            "slug": "input",
+            "isArray": true,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "2iHRa8eZl09gayKE": {
+          "connection": "kZwUhq5O0rWeJQYk:outputs:result"
+        },
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconsole.log({inputs})\nreturn [];"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "5rxwWUI3s4DYirVB:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "w5XxEcHAsKe5TnZr"
+}

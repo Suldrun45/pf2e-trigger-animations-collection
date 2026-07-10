@@ -1,0 +1,167 @@
+{
+  "name": "Change Shape",
+  "folder": "Ancestry Feat",
+  "priority": 0,
+  "description": "<p><em>Created by @Chasarooni</em></p>",
+  "nodes": [
+    {
+      "id": "T5GLTnEBhvfZY42t",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "update:change-shape"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "7kwiwMorCS3WkWCh:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 963.9230769230769,
+        "y": 223.5
+      },
+      "id": "vTzzUvCOQEl3ympm",
+      "inputs": {
+        "origin": {
+          "connection": "7kwiwMorCS3WkWCh:outputs:wNOJPVQqICHfOcNd"
+        },
+        "name": {
+          "connection": "7kwiwMorCS3WkWCh:outputs:jQQcRZalP6G7QbEt"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "NxWmc3kRYapwrlbk:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "T5GLTnEBhvfZY42t:outputs:item"
+        }
+      },
+      "position": {
+        "x": 698,
+        "y": 221.14999999999998
+      },
+      "id": "7kwiwMorCS3WkWCh",
+      "custom": {
+        "outputs": {
+          "wNOJPVQqICHfOcNd": {
+            "id": "wNOJPVQqICHfOcNd",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "jQQcRZalP6G7QbEt": {
+            "id": "jQQcRZalP6G7QbEt",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "vTzzUvCOQEl3ympm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "vTzzUvCOQEl3ympm:outputs:effect"
+        },
+        "location": {
+          "connection": "T5GLTnEBhvfZY42t:outputs:actor"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1243.4444444444443,
+        "y": 226.81666666666666
+      },
+      "id": "NxWmc3kRYapwrlbk",
+      "outs": {
+        "out": {
+          "connection": "7eUkaPfE97F4Wxx2:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "vTzzUvCOQEl3ympm:outputs:effect"
+        },
+        "objectScale": {
+          "value": 1.5
+        }
+      },
+      "position": {
+        "x": 1466.7777777777776,
+        "y": 223.4833333333333
+      },
+      "id": "7eUkaPfE97F4Wxx2",
+      "outs": {
+        "out": {
+          "connection": "YGMJr33F6HzkGe9H:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "vTzzUvCOQEl3ympm:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.smoke.puff.ring.01.white.2"
+        }
+      },
+      "position": {
+        "x": 1705.6666666666667,
+        "y": 220.02777777777783
+      },
+      "id": "YGMJr33F6HzkGe9H",
+      "outs": {
+        "out": {
+          "connection": "pEvdcfZVoj25LNe5:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 1933.923076923077,
+        "y": 214.5
+      },
+      "id": "pEvdcfZVoj25LNe5",
+      "inputs": {
+        "local": {
+          "value": true
+        }
+      }
+    }
+  ],
+  "id": "tedkb4Djcb2boggq"
+}

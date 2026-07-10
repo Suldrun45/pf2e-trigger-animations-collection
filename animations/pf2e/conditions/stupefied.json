@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "stupefied,update:stupefied"
+          "value": "condition:stupefied,update:stupefied"
         }
       }
     },

@@ -1,0 +1,127 @@
+{
+  "name": "Handler: Healing",
+  "folder": "System",
+  "priority": 100,
+  "description": "<p>Created by @Chasarooni</p>",
+  "nodes": [
+    {
+      "id": "N23TsYK70MCRp0GB",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "outs": {
+        "out": {
+          "connection": "1UXBWlChTbbpgI8X:ins:in"
+        }
+      },
+      "inputs": {
+        "name": {
+          "value": "healing:*"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "position": {
+        "x": 709.4444444444445,
+        "y": 113.33333333333331
+      },
+      "id": "1UXBWlChTbbpgI8X",
+      "custom": {
+        "outputs": {
+          "RNE8lD7qDcKIiDni": {
+            "id": "RNE8lD7qDcKIiDni",
+            "input": "slug",
+            "label": "Slug",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "input": {
+          "connection": "N23TsYK70MCRp0GB:outputs:item"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "Lvam1Xzk0lTyxFPM:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-animation",
+      "position": {
+        "x": 1255.3673225978605,
+        "y": 187.06664632161454
+      },
+      "id": "PymqPg7le7St7ZUw",
+      "inputs": {
+        "name": {
+          "connection": "Lvam1Xzk0lTyxFPM:outputs:result"
+        },
+        "actor": {
+          "connection": "N23TsYK70MCRp0GB:outputs:actor"
+        },
+        "sources": {
+          "connection": "N23TsYK70MCRp0GB:outputs:sources"
+        },
+        "targets": {
+          "connection": "N23TsYK70MCRp0GB:outputs:targets"
+        },
+        "options": {
+          "connection": "N23TsYK70MCRp0GB:outputs:options"
+        },
+        "item": {
+          "connection": "N23TsYK70MCRp0GB:outputs:item"
+        }
+      }
+    },
+    {
+      "type": "format-text",
+      "position": {
+        "x": 932.7776889910061,
+        "y": 111.33327229817706
+      },
+      "id": "Lvam1Xzk0lTyxFPM",
+      "custom": {
+        "inputs": {
+          "5YEY3kuRaXjzEXq8": {
+            "id": "5YEY3kuRaXjzEXq8",
+            "input": "slug",
+            "label": "slug",
+            "slug": "variable",
+            "type": "text"
+          },
+          "wzRgUtsTgpqgizLY": {
+            "id": "wzRgUtsTgpqgizLY",
+            "input": "type",
+            "label": "type",
+            "slug": "variable",
+            "type": "text"
+          }
+        }
+      },
+      "inputs": {
+        "plain": {
+          "value": "@type:@slug"
+        },
+        "5YEY3kuRaXjzEXq8": {
+          "connection": "1UXBWlChTbbpgI8X:outputs:RNE8lD7qDcKIiDni"
+        },
+        "wzRgUtsTgpqgizLY": {
+          "value": "trove-healing"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "PymqPg7le7St7ZUw:ins:in"
+        }
+      }
+    }
+  ],
+  "id": "lCcq3MNKUB5z4yeb"
+}

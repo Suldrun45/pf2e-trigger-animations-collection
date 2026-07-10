@@ -15,7 +15,7 @@
       },
       "inputs": {
         "name": {
-          "value": "fascinated"
+          "value": "condition:fascinated"
         }
       }
     },
