@@ -22,7 +22,7 @@ const CATEGORIES = {
   feats: "Feats",
   equipment: "Equipment",
   spells: "Spells",
-  helpers: "Helpers",
+  handlers: "Handlers",
 };
 const MODULE_TAG = "PF2e Trove";
 function getTagsAndCategory({ path, originalTags }) {
@@ -39,7 +39,9 @@ function getTagsAndCategory({ path, originalTags }) {
 
   //Category
   const category =
-    system === "helpers" ? CATEGORIES.helpers : pathSegments[SEGMENTS.CATEGORY];
+    system === "handlers"
+      ? CATEGORIES.handlers
+      : pathSegments[SEGMENTS.CATEGORY];
   tags.add(category);
   const categoryName = CATEGORIES[category];
 
