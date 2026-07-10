@@ -4,6 +4,10 @@
   - Persistent Damage, Buzzing Bites, Guidance, Hurtling Stone, Scatter Scree, Void Scour, Group: Polearms, Claw, Blinded, Clumsy, Confused, Controlled, Dazzled, Deafened, Doomed, Drained, Dying, Encumbered, Enfeebled, Fascinated, Fatigued, Fleeing, Frightened, Grabbed, Immobilized, Off-Guard, Paralyzed, Petrified, Prone, Quickened, Sickened, Slowed, Stunned, Stupefied, Unconscious, Wounded, Group: Bombs, Group: Bows, Group: Crossbows, Rage, Weapon Group: Shield, Reload: Crossbow (Group), Reload: Pepperbox, Reload: Slide Pistol, Change Shape, Sneak Attack, Sanguine Mutagen, (@Chasarooni)
   - Fireball (@ChazPls)
 
+## 0.3.1
+
+- Fixed `handlers` not being placed in folders
+
 ## 0.3.0
 
 - **New**

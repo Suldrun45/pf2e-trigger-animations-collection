@@ -39,9 +39,7 @@ function getTagsAndCategory({ path, originalTags }) {
 
   //Category
   const category =
-    system === "handlers"
-      ? CATEGORIES.handlers
-      : pathSegments[SEGMENTS.CATEGORY];
+    system === "handlers" ? "handlers" : pathSegments[SEGMENTS.CATEGORY];
   tags.add(category);
   const categoryName = CATEGORIES[category];
 
