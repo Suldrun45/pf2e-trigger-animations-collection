@@ -5,6 +5,10 @@
   - ~~`attack`~~ -> `trove-attack`
   - ~~`damage`~~ -> `trove-damage`
 
+## 0.4.1
+
+- Updated to `Trigger Animations` version `0.5.2`
+
 ## 0.4.0
 
 - **New**
