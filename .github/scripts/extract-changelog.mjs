@@ -5,6 +5,7 @@ import { readFileSync } from "fs";
 const [, , version, versionPrefix, changelogPath] = process.argv;
 
 if (!version || !versionPrefix || !changelogPath) {
+  console.error({ version, versionPrefix, changelogPath });
   console.error(
     "Usage: extract-changelog.mjs <version> <version_prefix> <changelog_path>",
   );
