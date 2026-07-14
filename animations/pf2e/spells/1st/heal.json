@@ -250,8 +250,8 @@
       },
       "type": "__gate_exit__",
       "position": {
-        "x": 1851.809754182812,
-        "y": -758.4762478104572
+        "x": 2035.809754182812,
+        "y": -768.4762478104572
       },
       "id": "BUTZgh5DdpflN3KJ",
       "outs": {
@@ -592,8 +592,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 2065.9706959706973,
-        "y": -758.7857142857138
+        "x": 2258.9706959706973,
+        "y": -768.7857142857138
       },
       "id": "8GFoAkgVbpDOYa1O",
       "inputs": {
@@ -604,27 +604,6 @@
           "connection": "GyCtlxbQE19Zja43:outputs:entry"
         }
       },
-      "outs": {
-        "out": {
-          "connection": "eGGAt89ZefacoBBY:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "8GFoAkgVbpDOYa1O:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 2346.369047619049,
-        "y": -760.1904761904752
-      },
-      "id": "eGGAt89ZefacoBBY",
       "outs": {
         "out": {
           "connection": "IcwJrG7sTsgwyr62:ins:in"
@@ -643,13 +622,13 @@
         }
       },
       "position": {
-        "x": 2578.273809523811,
-        "y": -762.9333333333328
+        "x": 2541.273809523811,
+        "y": -766.9333333333329
       },
       "id": "IcwJrG7sTsgwyr62",
       "outs": {
         "out": {
-          "connection": "c4t7RNVMBGoFVyAF:ins:in"
+          "connection": "rio74bX5A2c1eT40:ins:in"
         }
       }
     },
@@ -661,34 +640,10 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2451.4166666666674,
-        "y": -818.0357142857133
+        "x": 2416.4166666666674,
+        "y": -812.0357142857133
       },
       "id": "RTe6SZsKNKISl3Fa"
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "8GFoAkgVbpDOYa1O:outputs:sound"
-        },
-        "panSound": {
-          "value": true
-        },
-        "alwaysForGMs": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 2809.8452380952394,
-        "y": -766.880952380953
-      },
-      "id": "c4t7RNVMBGoFVyAF",
-      "outs": {
-        "out": {
-          "connection": "5Kh616iYfdZCcSj7:ins:in"
-        }
-      }
     },
     {
       "inputs": {
@@ -1060,8 +1015,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 1944.1666666666672,
-        "y": -661.4761904761907
+        "x": 2128.166666666667,
+        "y": -671.4761904761908
       },
       "id": "GyCtlxbQE19Zja43"
     },
@@ -1096,9 +1051,27 @@
           "connection": "Viyn9gdFke32xdBs:ins:in"
         }
       }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "8GFoAkgVbpDOYa1O:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 2754,
+        "y": -767.75
+      },
+      "id": "rio74bX5A2c1eT40",
+      "outs": {
+        "out": {
+          "connection": "5Kh616iYfdZCcSj7:ins:in"
+        }
+      }
     }
   ],
-  "id": "8TBcPrfCTFLbiB2h",
+  "id": "7LwpBb75n9c2ZyA8",
   "variables": {
     "MAfs4Gp8qyCUleDT:outputs:rweok2JFdqMJjbzW": {
       "isArray": false,
@@ -1121,6 +1094,5 @@
       "type": "target"
     }
   },
-  "tags": ["spell", "pf2e", "template", "PF2e Trove", "spells", "3rd"],
   "description": "<p><em>Created by @Chasarooni</em></p>"
 }

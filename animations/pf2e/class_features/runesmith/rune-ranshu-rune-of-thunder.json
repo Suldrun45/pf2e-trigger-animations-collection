@@ -149,8 +149,8 @@
     {
       "type": "effect",
       "position": {
-        "x": 1948,
-        "y": 181.46428571428575
+        "x": 1892,
+        "y": 183.46428571428578
       },
       "id": "nHMX5wflmzAXjafE",
       "inputs": {
@@ -178,8 +178,8 @@
         }
       },
       "position": {
-        "x": 2241.0769230769233,
-        "y": 171.21428571428575
+        "x": 2185.0769230769233,
+        "y": 173.21428571428578
       },
       "id": "QNDNjVKKOcV5AShD",
       "outs": {
@@ -200,8 +200,8 @@
         }
       },
       "position": {
-        "x": 2460.2197802197807,
-        "y": 172.82857142857145
+        "x": 2404.2197802197807,
+        "y": 174.82857142857142
       },
       "id": "yVOGCy3VI2FWGrga",
       "outs": {
@@ -222,8 +222,8 @@
         }
       },
       "position": {
-        "x": 2677.7197802197807,
-        "y": 177.57857142857145
+        "x": 2621.7197802197807,
+        "y": 179.57857142857142
       },
       "id": "62FMad7MHf74TOqL",
       "outs": {
@@ -240,16 +240,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2180.6388888888896,
-        "y": 455.3730158730158
+        "x": 2124.6388888888896,
+        "y": 457.3730158730158
       },
       "id": "G9nPgjpKjBXiVwuS"
     },
     {
       "type": "flow",
       "position": {
-        "x": 2908.1333943833947,
-        "y": 167.3373015873015
+        "x": 2852.1333943833947,
+        "y": 169.33730158730145
       },
       "id": "OjWNZbq6oLFben18",
       "inputs": {
@@ -269,13 +269,16 @@
     {
       "type": "sound",
       "position": {
-        "x": 3166.704822954823,
-        "y": 173.0515873015873
+        "x": 3110.704822954823,
+        "y": 175.05158730158723
       },
       "id": "8CBGdb2LDjttZdMd",
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.electricity.impact.charge.01"
+        },
+        "name": {
+          "connection": "lH91WpTGmM77Kfxg:outputs:oMxvQxFICXUbZfr4"
         }
       },
       "outs": {
@@ -296,13 +299,13 @@
         }
       },
       "position": {
-        "x": 3441.3849206349214,
-        "y": 165.90793650793654
+        "x": 3385.3849206349214,
+        "y": 167.90793650793648
       },
       "id": "oNhexIqAKINJqIXu",
       "outs": {
         "out": {
-          "connection": "TRdceonejbSatJTa:ins:in"
+          "connection": "XFIlhKpSqMaflqtl:ins:in"
         }
       }
     },
@@ -314,64 +317,16 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3309.607142857143,
-        "y": 324.2023809523809
+        "x": 3253.607142857143,
+        "y": 326.2023809523809
       },
       "id": "bOYI16eA2H1ejbO4"
     },
     {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "8CBGdb2LDjttZdMd:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 3662.4960317460327,
-        "y": 160.23015873015868
-      },
-      "id": "TRdceonejbSatJTa",
-      "outs": {
-        "out": {
-          "connection": "IGExSejERO61OHly:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "8CBGdb2LDjttZdMd:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "muffledEffectType": {
-          "value": "lowpass"
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 3882.4960317460323,
-        "y": 160.23015873015873
-      },
-      "id": "IGExSejERO61OHly",
-      "outs": {
-        "out": {
-          "connection": "XFIlhKpSqMaflqtl:ins:in"
-        }
-      }
-    },
-    {
       "type": "play",
       "position": {
-        "x": 4386.101648351649,
-        "y": 159.53571428571416
+        "x": 3870.1016483516487,
+        "y": 166.53571428571422
       },
       "id": "Fh4GnO3fTDGldaPI",
       "inputs": {
@@ -391,8 +346,8 @@
         }
       },
       "position": {
-        "x": 4120.142857142857,
-        "y": 158.25
+        "x": 3604.142857142857,
+        "y": 165.25
       },
       "id": "XFIlhKpSqMaflqtl",
       "outs": {
@@ -402,7 +357,7 @@
       }
     }
   ],
-  "id": "4ay9vKGw6hf0fUow",
+  "id": "NDTHjcC7SX4mZ3dc",
   "variables": {
     "kh5Ew3H5vm1sPjkF:outputs:targets": {
       "isArray": true,

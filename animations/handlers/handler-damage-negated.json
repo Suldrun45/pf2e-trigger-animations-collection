@@ -18,7 +18,7 @@
       },
       "inputs": {
         "name": {
-          "value": "negated:*"
+          "value": []
         }
       }
     },
@@ -129,6 +129,5 @@
       }
     }
   ],
-  "id": "tX3mCBIqEw4F94iE",
-  "tags": ["PF2e Trove", "handlers"]
+  "id": "tX3mCBIqEw4F94iE"
 }

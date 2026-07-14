@@ -22,10 +22,30 @@ Hooks.once("init", async function () {
   setupSettings();
 });
 
-Hooks.once("ready", async function () {});
+Hooks.once("ready", async function () {
+  registerPresets();
+});
 // function modifyTriggerAnimationTemplates() {
 //   triggerAnimations.api.templates.attack.prefixes = [
 //     "trove-attack",
 //     "trove-damage",
 //   ];
 // }
+
+function registerPresets() {
+  Sequencer.Presets.add("troveSound", (sound, args) => {
+    const radius =
+      args?.radius ??
+      Math.max(
+        canvas?.scene?.width / canvas?.scene?.grid?.size,
+        canvas?.scene?.height / canvas?.scene?.grid?.size,
+      ) ??
+      50;
+    return sound
+      .radius(radius)
+      .alwaysForGMs(true)
+      .panSound()
+      .muffledEffect({ type: "lowpass", intensity: 4 })
+      .volume(0.5);
+  });
+}

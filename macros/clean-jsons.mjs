@@ -8,7 +8,11 @@ import { Log, getAllJsonFiles, safeJSONParse } from "./helpers.mjs";
 const JSON_PATH = process.argv[2] || "./animations";
 
 const files = getAllJsonFiles(JSON_PATH);
-console.log(files.length);
+function removeTags(data) {
+  delete data.tags;
+  return data;
+}
+
 function cleanFiles(files) {
   let cleaned = 0;
   const failed = new Set();
@@ -17,6 +21,7 @@ function cleanFiles(files) {
     const file = fs.readFileSync(filePath, { encoding: "utf8" });
     const json = safeJSONParse(file);
     if (json.success) {
+      json.data = removeTags(json.data);
       const cleanFile = `${JSON.stringify(json.data, undefined, "\t")}\n`;
       if (cleanFile !== file) {
         cleaned++;

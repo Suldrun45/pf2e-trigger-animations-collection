@@ -36,7 +36,7 @@
       },
       "inputs": {
         "name": {
-          "value": "attack:*"
+          "value": []
         }
       }
     },
@@ -258,6 +258,5 @@
       }
     }
   ],
-  "id": "zd8VD1RfEBiqRIGY",
-  "tags": ["PF2e Trove", "handlers"]
+  "id": "zd8VD1RfEBiqRIGY"
 }

@@ -112,7 +112,7 @@
       "id": "tZx3gD7fub2eg684",
       "outs": {
         "out": {
-          "connection": "VXv28M6ynCBprU05:ins:in"
+          "connection": "vFzBx2pz6VbpawVV:ins:in"
         }
       }
     },
@@ -140,8 +140,8 @@
     {
       "type": "play",
       "position": {
-        "x": 1582.9945054945056,
-        "y": 98.28571428571439
+        "x": 2288.994505494505,
+        "y": 93.71428571428567
       },
       "id": "VXv28M6ynCBprU05",
       "inputs": {
@@ -149,7 +149,71 @@
           "value": true
         }
       }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 1495.923076923077,
+        "y": 98.5
+      },
+      "id": "vFzBx2pz6VbpawVV",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.abilities.rogue.sneak_attack.01"
+        },
+        "name": {
+          "value": "Sneak Attack"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ULWKZaVyDBxKyEe6:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "vFzBx2pz6VbpawVV:outputs:sound"
+        },
+        "location": {
+          "connection": "X7VUHPm6sBZZPia3:outputs:targets"
+        }
+      },
+      "position": {
+        "x": 1787.142857142857,
+        "y": 85.72142857142858
+      },
+      "id": "ULWKZaVyDBxKyEe6",
+      "outs": {
+        "out": {
+          "connection": "kP78LiHNndN9KjZG:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "vFzBx2pz6VbpawVV:outputs:sound"
+        },
+        "delayMin": {
+          "value": 400
+        }
+      },
+      "position": {
+        "x": 2003.9999999999995,
+        "y": 86.39285714285711
+      },
+      "id": "kP78LiHNndN9KjZG",
+      "outs": {
+        "out": {
+          "connection": "VXv28M6ynCBprU05:ins:in"
+        }
+      }
     }
   ],
-  "id": "czu8AJrmxOu13HS0"
+  "id": "X7vHwk1A9MuB2tmU"
 }

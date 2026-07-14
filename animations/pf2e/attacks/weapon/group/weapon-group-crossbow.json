@@ -1,8 +1,7 @@
 {
   "name": "Weapon Group: Crossbow",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": -100,
-  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -243,6 +242,9 @@
       "inputs": {
         "file": {
           "value": "ggg-sfx.ranged.crossbow.strike.01"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
         }
       },
       "outs": {
@@ -272,51 +274,6 @@
       "id": "arSAxn0KkOsvWOK8",
       "outs": {
         "out": {
-          "connection": "yypawNuJ9S2LEHjo:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 2958.916666666666,
-        "y": 60.416666666666856
-      },
-      "id": "yypawNuJ9S2LEHjo",
-      "outs": {
-        "out": {
-          "connection": "9utUoD9eFv6Wf6a0:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 3247.666666666666,
-        "y": 56.66666666666681
-      },
-      "id": "9utUoD9eFv6Wf6a0",
-      "outs": {
-        "out": {
           "connection": "h8QUgpsxBfvh2ouu:ins:in"
         }
       }
@@ -332,12 +289,12 @@
         }
       },
       "position": {
-        "x": 3467,
-        "y": 48.25
+        "x": 2939.857142857142,
+        "y": 58.25000000000006
       },
       "id": "h8QUgpsxBfvh2ouu"
     }
   ],
-  "id": "NBuy122oCnbHZ8qj",
+  "id": "KUNa3tvdGdwXDh8B",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>"
 }

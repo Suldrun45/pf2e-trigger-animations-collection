@@ -5,6 +5,27 @@
   - ~~`attack`~~ -> `trove-attack`
   - ~~`damage`~~ -> `trove-damage`
 
+## 0.5.0
+
+- **Animations**
+  - **New**
+    - Wave of Warning (@Chasarooni)
+  - **Updated**
+    - 🔊 Sneak Attack (@Chasarooni)
+- **New**
+  - Added New Preset for **Sound**
+  - `troveSound` - Gives the sound the following traits:
+    - A radius equal to the large of the two (Grid Width or Height)
+    - Always Play for GM
+    - Pan Sound
+    - Muffled Effect - Low Pass Filter
+    - Volume to `0.5` (add a volume node afterwards to override this)
+- **Update**
+  - Updated all animations with sound to use this preset and all animations going forth should utilize it
+  - Updated to `Trigger Animations` version `0.5.4`
+  - Trigger combining macro will no longer preserve listed `tags` on a trigger
+  - Tags will now be cleaned from animations when the repo is cleaned
+
 ## 0.4.3
 
 - Updated `ggg` minimum required version to `0.0.16`

@@ -13,6 +13,10 @@ You can either submit an animation PR (please link it to an issue if possible) o
 - Sort your animation in the proper folder, creating a new one if there's no folder that fits the animation
 - Format the trigger as requested on submission (`Prettier` 2 spaces per line) which can be run from the project with `npm run prettier`
 
+## Sound Files
+
+- If a sound is somewhere on the canavs apply the `troveSound` `preset` to each sound in an `Animation Trigger`
+
 ## Animation Submission Guidelines
 
 - **Acceptable Sources**

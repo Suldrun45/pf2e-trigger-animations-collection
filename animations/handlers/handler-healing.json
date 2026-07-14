@@ -18,7 +18,7 @@
       },
       "inputs": {
         "name": {
-          "value": "healing:*"
+          "value": []
         }
       }
     },
@@ -129,6 +129,5 @@
       }
     }
   ],
-  "id": "SghJqU20kOcTozV2",
-  "tags": ["PF2e Trove", "handlers"]
+  "id": "SghJqU20kOcTozV2"
 }

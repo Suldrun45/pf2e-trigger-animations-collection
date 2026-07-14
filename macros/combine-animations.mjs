@@ -27,7 +27,7 @@ const CATEGORIES = {
 };
 const MODULE_TAG = "PF2e Trove";
 function getTagsAndCategory({ path, originalTags }) {
-  const tags = new Set(originalTags);
+  const tags = new Set();
   const pathSegments = path
     .slice(path.indexOf(PATH_START) + PATH_START_BOOST)
     .split(/[\\/]/);
@@ -73,6 +73,73 @@ function getTagsAndCategory({ path, originalTags }) {
   return { tags: Array.from(tags), category: categoryName };
 }
 
+function getTriggerTags(animation) {
+  const tags = new Set();
+  const animationEvent = animation?.nodes?.find(
+    (node) => node?.type === "animation-event",
+  );
+  if (animationEvent) {
+    const triggers = animationEvent?.inputs?.name?.value
+      ?.split(",")
+      ?.map((t) => t?.trim());
+    for (const trigger of triggers) {
+      let tag;
+      const condition = trigger.substring(0, trigger.indexOf(":"));
+      switch (condition) {
+        case "action":
+          tag = "action";
+          break;
+        case "attack":
+        case "trove-attack":
+          tag = "attack-roll";
+          break;
+        case "check":
+          tag = "check";
+          break;
+        case "condition":
+          tag = "condition-granted";
+          break;
+        case "damage":
+        case "trove-damage":
+        case "persistent":
+          tag = "damage-taken";
+          break;
+        case "effect":
+          tag = "effect-granted";
+          break;
+        case "damage-roll":
+          tag = "damage-roll";
+          break;
+        case "healing":
+        case "trove-healing":
+          tag = "healing-taken";
+          break;
+        case "negated":
+        case "trove-negated":
+          tag = "damage-negated";
+          break;
+        case "update":
+          tag = "update";
+          break;
+        case "reload":
+          tag = "reload";
+          break;
+        case "template":
+          tag = "template";
+          break;
+        default:
+          // handle unmatched case if needed
+          break;
+      }
+
+      if (tag && !tags.has(tag)) {
+        tags.add(tag);
+      }
+    }
+  }
+  return Array.from(tags);
+}
+
 /**
  * Combine multiple animation JSON files into a single structure
  * @param {string} animationsDir - Directory containing animation JSON files
@@ -92,6 +159,7 @@ function combineAnimations(animationsDir = "./animations", baseFile = null) {
       const { tags, category } = getTagsAndCategory({
         path: filePath,
         originalTags: data?.tags ?? [],
+        triggerTags: getTriggerTags(data) ?? [],
       });
 
       data.tags = tags;

@@ -242,34 +242,56 @@
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.earth.ranged.rock.02"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
         }
       },
       "outs": {
         "out": {
-          "connection": "SdjACutYQqXvIRFd:ins:in"
+          "connection": "ICfzrjfCybkpz5Rt:ins:in"
         }
       }
     },
     {
-      "type": "snd-volume",
-      "position": {
-        "x": 1773.7383727383715,
-        "y": -364.063492063492
-      },
-      "id": "SdjACutYQqXvIRFd",
+      "type": "snd-location",
+      "state": "atLocation",
       "inputs": {
         "sound": {
           "connection": "SZSMc93bnnwXgMSf:outputs:sound"
         },
-        "volume": {
-          "value": 0.5
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
         },
-        "fadeInDelay": {
-          "value": 600
+        "toTarget": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "position": {
+        "x": 1764,
+        "y": -400.8499999999998
+      },
+      "id": "ICfzrjfCybkpz5Rt",
+      "outs": {
+        "out": {
+          "connection": "nfh40a7r2U0n9wog:ins:in"
         }
       }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "SZSMc93bnnwXgMSf:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 2047.25,
+        "y": -469.2499999999998
+      },
+      "id": "nfh40a7r2U0n9wog"
     }
   ],
   "description": "<p><em>Created by @Chasarooni</em></p>",
-  "id": "pLgSjX7Oq9k3BmIc"
+  "id": "GFvzu5BMisryAIdU"
 }

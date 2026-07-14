@@ -1,8 +1,7 @@
 {
   "name": "Weapon Group: Polearms",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": -100,
-  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -341,11 +340,14 @@
       "inputs": {
         "file": {
           "connection": "h0p6mid1HU99KQJ9:outputs:RgX9zjQqGgUUnOA7"
+        },
+        "name": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
         }
       },
       "outs": {
         "out": {
-          "connection": "PVMRcxbDukikURFm:ins:in"
+          "connection": "lQRZyEkdVrHwcA4l:ins:in"
         }
       }
     },
@@ -391,27 +393,6 @@
       }
     },
     {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "wewKUsT5boOGrmqF:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 2581.055555555556,
-        "y": -250.22619047619048
-      },
-      "id": "PVMRcxbDukikURFm",
-      "outs": {
-        "out": {
-          "connection": "rreJMMvuTqGYXdYG:ins:in"
-        }
-      }
-    },
-    {
       "type": "snd-flow",
       "inputs": {
         "sound": {
@@ -426,9 +407,34 @@
         "y": -252.44841269841243
       },
       "id": "rreJMMvuTqGYXdYG"
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "wewKUsT5boOGrmqF:outputs:sound"
+        },
+        "location": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:source"
+        },
+        "toTarget": {
+          "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        }
+      },
+      "position": {
+        "x": 2582,
+        "y": -256.85
+      },
+      "id": "lQRZyEkdVrHwcA4l",
+      "outs": {
+        "out": {
+          "connection": "rreJMMvuTqGYXdYG:ins:in"
+        }
+      }
     }
   ],
-  "id": "XC2XhdmgK0hWzbJi",
+  "id": "BLi1vn2E9KM27uF5",
   "description": "<p><em>Made by @Chasarooni</em></p>",
   "variables": {
     "mpa5CCtLfa7bjI71:outputs:QPWf9ZnV9bidhNIQ": {

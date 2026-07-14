@@ -61,31 +61,7 @@
       "id": "1oM2eRY1OHOR8FQB",
       "outs": {
         "out": {
-          "connection": "zh5rnHx2bv1cJQ8g:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "GvONb7qWr07VO2lo:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 1334,
-        "y": 200.25
-      },
-      "id": "zh5rnHx2bv1cJQ8g",
-      "outs": {
-        "out": {
-          "connection": "KKe9CVOwO0N6EP8b:ins:in"
+          "connection": "hzBNutR2ObVve7Mf:ins:in"
         }
       }
     },
@@ -131,7 +107,25 @@
           "value": true
         }
       }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "GvONb7qWr07VO2lo:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 1309,
+        "y": 203.25
+      },
+      "id": "hzBNutR2ObVve7Mf",
+      "outs": {
+        "out": {
+          "connection": "KKe9CVOwO0N6EP8b:ins:in"
+        }
+      }
     }
   ],
-  "id": "DdZD89Ax28EyU2CU"
+  "id": "Go8YkzmiVJCKJEzA"
 }

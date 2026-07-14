@@ -276,6 +276,9 @@
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.fire.impact.flame.02.01"
+        },
+        "name": {
+          "connection": "lH91WpTGmM77Kfxg:outputs:oMxvQxFICXUbZfr4"
         }
       },
       "outs": {
@@ -302,7 +305,7 @@
       "id": "oNhexIqAKINJqIXu",
       "outs": {
         "out": {
-          "connection": "TRdceonejbSatJTa:ins:in"
+          "connection": "XFIlhKpSqMaflqtl:ins:in"
         }
       }
     },
@@ -320,58 +323,10 @@
       "id": "bOYI16eA2H1ejbO4"
     },
     {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "8CBGdb2LDjttZdMd:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 3662.4960317460327,
-        "y": 160.23015873015868
-      },
-      "id": "TRdceonejbSatJTa",
-      "outs": {
-        "out": {
-          "connection": "IGExSejERO61OHly:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "8CBGdb2LDjttZdMd:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "muffledEffectType": {
-          "value": "lowpass"
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 3882.4960317460323,
-        "y": 160.23015873015873
-      },
-      "id": "IGExSejERO61OHly",
-      "outs": {
-        "out": {
-          "connection": "XFIlhKpSqMaflqtl:ins:in"
-        }
-      }
-    },
-    {
       "type": "play",
       "position": {
-        "x": 4386.101648351649,
-        "y": 159.53571428571416
+        "x": 3944.8516483516487,
+        "y": 167.03571428571416
       },
       "id": "Fh4GnO3fTDGldaPI",
       "inputs": {
@@ -391,8 +346,8 @@
         }
       },
       "position": {
-        "x": 4120.142857142857,
-        "y": 158.25
+        "x": 3678.892857142857,
+        "y": 165.75
       },
       "id": "XFIlhKpSqMaflqtl",
       "outs": {
@@ -402,7 +357,7 @@
       }
     }
   ],
-  "id": "bcyIdyZlIQ2ciD6P",
+  "id": "IXG3UvSt5lLYc7Aw",
   "variables": {
     "kh5Ew3H5vm1sPjkF:outputs:targets": {
       "isArray": true,

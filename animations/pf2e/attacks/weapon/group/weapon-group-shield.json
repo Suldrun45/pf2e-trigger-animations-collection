@@ -2,7 +2,6 @@
   "name": "Weapon Group: Shield",
   "folder": "Attacks",
   "priority": -100,
-  "tags": ["attack-roll", "PF2e Trove", "pf2e", "attacks", "weapon"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -304,7 +303,7 @@
       },
       "outs": {
         "out": {
-          "connection": "PVMRcxbDukikURFm:ins:in"
+          "connection": "rreJMMvuTqGYXdYG:ins:in"
         }
       }
     },
@@ -350,27 +349,6 @@
       }
     },
     {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "wewKUsT5boOGrmqF:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 2581.055555555556,
-        "y": -250.22619047619048
-      },
-      "id": "PVMRcxbDukikURFm",
-      "outs": {
-        "out": {
-          "connection": "rreJMMvuTqGYXdYG:ins:in"
-        }
-      }
-    },
-    {
       "type": "snd-flow",
       "inputs": {
         "sound": {
@@ -381,8 +359,8 @@
         }
       },
       "position": {
-        "x": 2802.166666666667,
-        "y": -252.44841269841243
+        "x": 2620.166666666667,
+        "y": -242.44841269841243
       },
       "id": "rreJMMvuTqGYXdYG",
       "outs": {
@@ -403,36 +381,12 @@
         }
       },
       "position": {
-        "x": 3082.369047619047,
-        "y": -254.99682539682544
+        "x": 2910.369047619047,
+        "y": -238.99682539682544
       },
-      "id": "WzzVCqvsNZYlkUyu",
-      "outs": {
-        "out": {
-          "connection": "dhkTmfE97Gqm4laS:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "wewKUsT5boOGrmqF:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 3309.97619047619,
-        "y": -257.32539682539687
-      },
-      "id": "dhkTmfE97Gqm4laS"
+      "id": "WzzVCqvsNZYlkUyu"
     }
   ],
-  "id": "tJXlDnvBUVkKIsrE",
+  "id": "wUPamuOT8lD3OiJD",
   "description": "<p><em>Made by @Chasarooni</em></p>"
 }

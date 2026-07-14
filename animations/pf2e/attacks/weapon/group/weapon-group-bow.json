@@ -1,8 +1,7 @@
 {
   "name": "Weapon Group: Bow",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": -100,
-  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -272,51 +271,24 @@
       "id": "arSAxn0KkOsvWOK8",
       "outs": {
         "out": {
-          "connection": "yypawNuJ9S2LEHjo:ins:in"
+          "connection": "yrOgHdbmGxQF5uAv:ins:in"
         }
       }
     },
     {
-      "type": "snd-spatial",
+      "type": "snd-flow",
       "inputs": {
         "sound": {
           "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
         }
       },
       "position": {
-        "x": 2958.916666666666,
-        "y": 60.416666666666856
+        "x": 2930,
+        "y": 29.25
       },
-      "id": "yypawNuJ9S2LEHjo",
-      "outs": {
-        "out": {
-          "connection": "9utUoD9eFv6Wf6a0:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 3247.666666666666,
-        "y": 56.66666666666681
-      },
-      "id": "9utUoD9eFv6Wf6a0"
+      "id": "yrOgHdbmGxQF5uAv"
     }
   ],
-  "id": "7wz5uUMJ7oAKH7Uy",
+  "id": "rQzNeQxt8ni9tH91",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>"
 }

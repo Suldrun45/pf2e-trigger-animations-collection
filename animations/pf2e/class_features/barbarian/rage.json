@@ -37,6 +37,9 @@
       "inputs": {
         "origin": {
           "connection": "GFMKGjt8QFs0L8uW:outputs:entry"
+        },
+        "name": {
+          "connection": "LbZnlg1vnBGJPz2q:outputs:entry"
         }
       }
     },
@@ -149,8 +152,8 @@
     {
       "type": "play",
       "position": {
-        "x": 3346.3487623487613,
-        "y": 549.0649350649352
+        "x": 3372.063048063047,
+        "y": 546.2077922077924
       },
       "id": "SW6ZeNxbHQVg27Dj",
       "inputs": {
@@ -581,8 +584,8 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 3916.3797868797883,
-        "y": -663.5880230880234
+        "x": 3918.8797868797883,
+        "y": -676.0880230880234
       },
       "id": "EgClHTxT4Gl3Bcmy"
     },
@@ -1104,66 +1107,15 @@
       },
       "outs": {
         "out": {
-          "connection": "acdS5OIfRb7dm8jq:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "Dor64RnNfy08Fv8f:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 2868.0238095238087,
-        "y": 706.4999999999999
-      },
-      "id": "acdS5OIfRb7dm8jq",
-      "outs": {
-        "out": {
           "connection": "cMJpq3oc1ZLuoJmS:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "Dor64RnNfy08Fv8f:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "baseEffectType": {
-          "value": "reverb"
-        },
-        "panSound": {
-          "value": true
-        },
-        "baseEffectIntensity": {
-          "value": 10
-        }
-      },
-      "position": {
-        "x": 3097.1309523809527,
-        "y": 547.3333333333329
-      },
-      "id": "RBZ8NBOSJyNyD5ll",
-      "outs": {
-        "out": {
-          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
         }
       }
     },
     {
       "type": "snd-location",
       "position": {
-        "x": 2861.220695970696,
-        "y": 1039.3047619047616
+        "x": 2882.6492673992675,
+        "y": 773.5904761904759
       },
       "id": "cMJpq3oc1ZLuoJmS",
       "inputs": {
@@ -1176,43 +1128,25 @@
       },
       "outs": {
         "out": {
-          "connection": "RBZ8NBOSJyNyD5ll:ins:in"
+          "connection": "OEqxD4e5k9ZblVp7:ins:in"
         }
       }
     },
     {
       "type": "sound",
       "position": {
-        "x": 3319.7023809523807,
-        "y": -670.7619047619049
+        "x": 3327.2023809523807,
+        "y": -674.511904761905
       },
       "id": "KynDgT7yLDVMTnff",
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.earth.earthquake.distant.short.01.01"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "Dygkk41AQ3GchZFt:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "KynDgT7yLDVMTnff:outputs:sound"
         },
-        "volume": {
-          "value": 0.4
+        "name": {
+          "connection": "80jvZ2X0xb1xuSm7:outputs:entry"
         }
       },
-      "position": {
-        "x": 3378.5054945054944,
-        "y": -529.2142857142857
-      },
-      "id": "Dygkk41AQ3GchZFt",
       "outs": {
         "out": {
           "connection": "L85TbXoBVIRbgC8l:ins:in"
@@ -1220,40 +1154,10 @@
       }
     },
     {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "KynDgT7yLDVMTnff:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "baseEffectType": {
-          "value": "reverb"
-        },
-        "panSound": {
-          "value": true
-        },
-        "baseEffectIntensity": {
-          "value": 10
-        }
-      },
-      "position": {
-        "x": 3662.6126373626366,
-        "y": -662.8571428571432
-      },
-      "id": "wZzPMKonsLVx005W",
-      "outs": {
-        "out": {
-          "connection": "EgClHTxT4Gl3Bcmy:ins:in"
-        }
-      }
-    },
-    {
       "type": "snd-location",
       "position": {
-        "x": 3379.3690476190477,
-        "y": -187.7428571428577
+        "x": 3398.1190476190477,
+        "y": -518.9928571428577
       },
       "id": "L85TbXoBVIRbgC8l",
       "inputs": {
@@ -1266,7 +1170,7 @@
       },
       "outs": {
         "out": {
-          "connection": "wZzPMKonsLVx005W:ins:in"
+          "connection": "prsMTy1uifzdi7uc:ins:in"
         }
       }
     },
@@ -1278,8 +1182,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 3228.5119047619055,
-        "y": -95.52380952380918
+        "x": 3284.7619047619055,
+        "y": -431.7738095238092
       },
       "id": "FtYotMqo6zv4g6o3"
     },
@@ -1291,8 +1195,8 @@
       },
       "type": "__variable_getter__",
       "position": {
-        "x": 2737.083333333334,
-        "y": 1124.4761904761904
+        "x": 2771.369047619048,
+        "y": 858.7619047619047
       },
       "id": "eSJHspn4KzU1xHQC"
     },
@@ -1308,12 +1212,61 @@
         "y": 491.6190476190473
       },
       "id": "EA0j1kbN1WPSHRye"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "wjDV7ApiwKUADuEn:outputs:4evIVjDjaVwQ28ss"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 3156.3809523809523,
+        "y": -721.7380952380952
+      },
+      "id": "80jvZ2X0xb1xuSm7"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "KynDgT7yLDVMTnff:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 3642.3809523809523,
+        "y": -674.4880952380952
+      },
+      "id": "prsMTy1uifzdi7uc",
+      "outs": {
+        "out": {
+          "connection": "EgClHTxT4Gl3Bcmy:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "Dor64RnNfy08Fv8f:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 3085.238095238096,
+        "y": 548.0119047619048
+      },
+      "id": "OEqxD4e5k9ZblVp7",
+      "outs": {
+        "out": {
+          "connection": "SW6ZeNxbHQVg27Dj:ins:in"
+        }
+      }
     }
   ],
   "name": "Rage",
   "description": "<p>Rewritten by @Chasarooni</p><p>Original Animation from @MrVauxs</p>",
   "folder": "Class Features",
-  "id": "vP68VTafsMGgnvNB",
+  "id": "CaNR7tmRnIn4DEOq",
   "variables": {
     "wjDV7ApiwKUADuEn:outputs:70aosF6hawepmW0s": {
       "isArray": false,

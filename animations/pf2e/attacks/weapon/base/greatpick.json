@@ -2,7 +2,6 @@
   "name": "Greatpick",
   "folder": "Weapons",
   "priority": -50,
-  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -13,7 +12,7 @@
       "type": "animation-event",
       "inputs": {
         "name": {
-          "value": "trove-attack:greatpick"
+          "value": []
         }
       },
       "custom": {

@@ -2,7 +2,6 @@
   "name": "Void Scour",
   "folder": "Spells",
   "priority": 0,
-  "tags": ["template", "PF2e Trove", "sf2e", "spells", "7th"],
   "nodes": [
     {
       "id": "cQ4T2clnTJ2z70XX",
@@ -142,8 +141,8 @@
     {
       "type": "play",
       "position": {
-        "x": 2581.6371401469837,
-        "y": 289.4999563694
+        "x": 3082.3871401469837,
+        "y": 288.2499563694
       },
       "id": "stsDzcixyehs1bhi",
       "inputs": {
@@ -196,32 +195,14 @@
       "inputs": {
         "file": {
           "value": "ggg-sfx.magic.occult.siphon.01.01"
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "ujyfibZuBZ8AJrIf:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "position": {
-        "x": 2345.589743589744,
-        "y": 285.83333333333337
-      },
-      "id": "ujyfibZuBZ8AJrIf",
-      "inputs": {
-        "sound": {
-          "connection": "Anm8jTC91Wwav5VE:outputs:sound"
         },
-        "volume": {
-          "value": 0.5
+        "name": {
+          "connection": "yrj2uPt3khcsH3UF:outputs:zZlfyqWnDi4qyRui"
         }
       },
       "outs": {
         "out": {
-          "connection": "stsDzcixyehs1bhi:ins:in"
+          "connection": "R40kXsj8B9KW6tj1:ins:in"
         }
       }
     },
@@ -278,9 +259,103 @@
           "connection": "xs7iLq9hzxYOTYOc:ins:in"
         }
       }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "Anm8jTC91Wwav5VE:outputs:sound"
+        },
+        "location": {
+          "connection": "R40kXsj8B9KW6tj1:outputs:tS3ScMUSZdNDGxqT"
+        }
+      },
+      "position": {
+        "x": 2599.75,
+        "y": 287.23333333333346
+      },
+      "id": "RD3nS87WGg1yDOj3",
+      "outs": {
+        "out": {
+          "connection": "aUJ2EETQxRnbzPSm:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "Anm8jTC91Wwav5VE:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 2814.75,
+        "y": 286.8333333333335
+      },
+      "id": "aUJ2EETQxRnbzPSm",
+      "outs": {
+        "out": {
+          "connection": "stsDzcixyehs1bhi:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 2330,
+        "y": 285
+      },
+      "id": "R40kXsj8B9KW6tj1",
+      "custom": {
+        "inputs": {
+          "Fd9FyG9Lgg2AyIcQ": {
+            "id": "Fd9FyG9Lgg2AyIcQ",
+            "label": "Template",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
+        },
+        "outputs": {
+          "tS3ScMUSZdNDGxqT": {
+            "id": "tS3ScMUSZdNDGxqT",
+            "label": "Point",
+            "slug": "output",
+            "isArray": false,
+            "type": "point"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: \"point\", value: template?.shapes?.[0]?.center}];"
+        },
+        "Fd9FyG9Lgg2AyIcQ": {
+          "connection": "0kqP5lR3IHrVUjnZ:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "RD3nS87WGg1yDOj3:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2207,
+        "y": 419
+      },
+      "id": "0kqP5lR3IHrVUjnZ"
     }
   ],
-  "id": "3hRgKmlJNbZ04Md7",
+  "id": "KmNVucoF42KzdPwa",
   "description": "<p>Created by @Chasarooni</p>",
   "variables": {
     "cQ4T2clnTJ2z70XX:outputs:MWUBRl5UO1EKczQU": {

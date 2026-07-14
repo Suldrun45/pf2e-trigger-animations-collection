@@ -25,31 +25,20 @@ The following are triggers specific to Trigger Animation Trove, for all other tr
 | Effect / Condition Badge Update | `none`                                             | `update:item-slug`                                       |
 | Roll Option Update              | `none`                                             | `update:item-slug`                                       |
 
+The following are presets for particular sources
+
+**Sound**
+
+- `troveSound` - Gives the sound the following traits
+  - A radius equal to the large of the two (Grid Width or Height)
+  - Always Play for GM
+  - Pan Sound
+  - Muffled Effect - Low Pass Filter
+  - Volume to `0.5` (add a volume node afterwards to override this)
+
 ## Animation Submission Guidelines
 
-- **Acceptable Sources**
-  - Currently the following are acceptable sources for animations/SFX
-    - **[JB2A](https://www.patreon.com/JB2A)** (Note animations are built for the Patreon version primarily, but some may also have workarounds to support the free version)
-    - **[GGG Asset Pack](https://github.com/ChasarooniZ/GGG-Sequencer-Sound-DB-Collection)**
-    - **Future Vauxs Specific Asset Pack** (has yet to be released)
-- **Animation Qualities**
-  - **Minimal** - 1 animation ~ 1 sfx (or SFX only)
-  - **Low** - Medium but with no persistent and possibly toned down a bit if it's a lot
-  - **Medium** - ~3 animations / ~3 sfx + Persistent Templates allowed (as long its not a ton)
-    - _This is the aim for the majority of animations_
-  - **High** - Medium but with Persistent Effects allowed
-
-_The following is WIP_
-
-- **Priority of Animations**
-  - 0 - **Default**
-  - **Weapons**
-    - -100 - **Group** `Firearm`
-    - -50 - **Base** `Gun Sword`
-    - 0 - **Specific** `Petrification Cannon`
-  - **Spells**
-    - -50 **Trait** `Fire` _this should mostly just be the cast animation_
-    - 0 **Specific Spell** `Fireball`
+[Click Me!](./CONTRIBUTING.md)
 
 ## Table of Contents
 

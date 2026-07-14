@@ -1,8 +1,7 @@
 {
   "name": "Weapon Group: Bomb",
-  "folder": "Weapons",
+  "folder": "Attacks",
   "priority": -100,
-  "tags": ["attack-roll"],
   "nodes": [
     {
       "id": "zwvWO50CXI44ObmF",
@@ -243,6 +242,9 @@
       "inputs": {
         "file": {
           "value": "ggg-sfx.ranged.thrown.general.01"
+        },
+        "name": {
+          "connection": "f5ZgryaIYdPl6eEu:outputs:entry"
         }
       },
       "outs": {
@@ -270,51 +272,6 @@
         "y": -538.3499999999996
       },
       "id": "arSAxn0KkOsvWOK8",
-      "outs": {
-        "out": {
-          "connection": "yypawNuJ9S2LEHjo:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 1755.5833333333326,
-        "y": -772.9166666666666
-      },
-      "id": "yypawNuJ9S2LEHjo",
-      "outs": {
-        "out": {
-          "connection": "9utUoD9eFv6Wf6a0:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "gwoJVDU0SJcnKJrd:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 1997.666666666666,
-        "y": -468.33333333333314
-      },
-      "id": "9utUoD9eFv6Wf6a0",
       "outs": {
         "out": {
           "connection": "9N1P6bP6TLP9OhoR:ins:in"
@@ -1142,8 +1099,8 @@
     {
       "type": "snd-flow",
       "position": {
-        "x": 2236.5515040515056,
-        "y": -590.7987012987012
+        "x": 1753.2181707181721,
+        "y": -574.1320346320344
       },
       "id": "9N1P6bP6TLP9OhoR",
       "inputs": {
@@ -1170,6 +1127,9 @@
       "inputs": {
         "file": {
           "connection": "inftDv6OxVqQ0eNc:outputs:oTAn9oIVZeyfblPY"
+        },
+        "name": {
+          "connection": "x0BZWZ9skUVAYZGg:outputs:entry"
         }
       },
       "outs": {
@@ -1190,55 +1150,15 @@
         }
       },
       "position": {
-        "x": 6133.538683538686,
-        "y": -196.73203463203413
+        "x": 6134.788683538686,
+        "y": -175.4820346320338
       },
       "id": "JbtqV0n3lH0M269n",
       "outs": {
         "out": {
-          "connection": "pl9s4fQUuswXmuZi:ins:in"
+          "connection": "SowECjYXbRHiajBr:ins:in"
         }
       }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "U0J4Ln92UEyHDqzK:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        },
-        "panSound": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 6367.538683538686,
-        "y": -431.29870129870113
-      },
-      "id": "pl9s4fQUuswXmuZi",
-      "outs": {
-        "out": {
-          "connection": "q9W67Xmqpv1yHcGl:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "U0J4Ln92UEyHDqzK:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 6619.62201687202,
-        "y": -162.27092352092313
-      },
-      "id": "q9W67Xmqpv1yHcGl"
     },
     {
       "type": "execute-script",
@@ -1348,9 +1268,48 @@
           "connection": "VbeNothA9wpwoNIY:ins:in"
         }
       }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "U0J4Ln92UEyHDqzK:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 6352.380952380953,
+        "y": -178.54761904761915
+      },
+      "id": "SowECjYXbRHiajBr"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 5705.019841269841,
+        "y": 63.563492063492134
+      },
+      "id": "x0BZWZ9skUVAYZGg"
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mpa5CCtLfa7bjI71:outputs:sR6Cy5NKJKuZpmQg"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1058.3531746031742,
+        "y": -270.88095238095224
+      },
+      "id": "f5ZgryaIYdPl6eEu"
     }
   ],
-  "id": "EwaE7Xfj0HIr6lsP",
+  "id": "fG0UdQKXe4T02bqa",
   "description": "<p><em>Example Animation from Trigger Animations by @MrVauxs.</em></p><p></p><p>Modified by @Chasarooni for use in Trigger Animation Trove</p>",
   "variables": {
     "u5pt4SedW2srmM68:outputs:Jjk6UZPsTxR5pJGA": {

@@ -183,8 +183,8 @@
     {
       "type": "play",
       "position": {
-        "x": 3010.538093927781,
-        "y": 472.90506178596536
+        "x": 4107.10952249921,
+        "y": 537.7622046431081
       },
       "id": "7NxAe2lrSb9HfH8T",
       "inputs": {
@@ -470,8 +470,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 2001.1349206349205,
-        "y": 342.94841269841254
+        "x": 2534.849206349206,
+        "y": 506.9484126984124
       },
       "id": "ad7OiRZPEqUTXMB6",
       "inputs": {
@@ -484,31 +484,7 @@
       },
       "outs": {
         "out": {
-          "connection": "ahzIjBfvuotI8ck5:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "position": {
-        "x": 2316.1611721611707,
-        "y": 159.1349206349205
-      },
-      "id": "ahzIjBfvuotI8ck5",
-      "inputs": {
-        "sound": {
-          "connection": "ad7OiRZPEqUTXMB6:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        },
-        "fadeInDelay": {
-          "value": 1000
-        }
-      },
-      "outs": {
-        "out": {
-          "connection": "HErMjYw4BnbecFHI:ins:in"
+          "connection": "q38GOs04nK2QV9rE:ins:in"
         }
       }
     },
@@ -536,8 +512,8 @@
       },
       "type": "__gate_entry__",
       "position": {
-        "x": 2986.4847652347653,
-        "y": 339.3888888888892
+        "x": 4083.0561938061937,
+        "y": 404.246031746032
       },
       "id": "3nHVOMuocr5dNHMO"
     },
@@ -745,8 +721,8 @@
     {
       "type": "get-quality",
       "position": {
-        "x": 2642.166666666666,
-        "y": 454.13888888888886
+        "x": 3695.880952380952,
+        "y": 500.4246031746031
       },
       "id": "HErMjYw4BnbecFHI",
       "outs": {
@@ -763,6 +739,100 @@
           "connection": "7NxAe2lrSb9HfH8T:ins:in"
         }
       }
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "ad7OiRZPEqUTXMB6:outputs:sound"
+        },
+        "location": {
+          "connection": "q38GOs04nK2QV9rE:outputs:tS3ScMUSZdNDGxqT"
+        }
+      },
+      "position": {
+        "x": 3124.999999999999,
+        "y": 511.4357142857141
+      },
+      "id": "57v1aTnnTfXkbbSg",
+      "outs": {
+        "out": {
+          "connection": "2KxsILpGcBd2WDX0:ins:in"
+        }
+      }
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "ad7OiRZPEqUTXMB6:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 3387.6071428571413,
+        "y": 503.2142857142858
+      },
+      "id": "2KxsILpGcBd2WDX0",
+      "outs": {
+        "out": {
+          "connection": "HErMjYw4BnbecFHI:ins:in"
+        }
+      }
+    },
+    {
+      "type": "execute-script",
+      "position": {
+        "x": 2822.7142857142862,
+        "y": 509
+      },
+      "id": "q38GOs04nK2QV9rE",
+      "custom": {
+        "inputs": {
+          "Fd9FyG9Lgg2AyIcQ": {
+            "id": "Fd9FyG9Lgg2AyIcQ",
+            "label": "Template",
+            "slug": "input",
+            "isArray": false,
+            "type": "any"
+          }
+        },
+        "outputs": {
+          "tS3ScMUSZdNDGxqT": {
+            "id": "tS3ScMUSZdNDGxqT",
+            "label": "Point",
+            "slug": "output",
+            "isArray": false,
+            "type": "point"
+          }
+        }
+      },
+      "inputs": {
+        "script": {
+          "value": "/**\n * @param {unknown[]} inputs\n * @returns {boolean} to break out current process\n * @returns {{type: EntryType; value: unknown}[]}\n *\n * @example\n * const x = inputs[0];\n * const y = inputs[1];\n * return [{type: \"number\", value: x + y}];\n */\nconst template = inputs[0]\nreturn [{type: \"point\", value: template?.shapes?.[0]?.center}];"
+        },
+        "Fd9FyG9Lgg2AyIcQ": {
+          "connection": "9GBkaGORaevxbWFe:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "57v1aTnnTfXkbbSg:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "1uSVoD3c1s4A59Be:outputs:uMS4ixeUqsnWWTRj"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2684.142857142857,
+        "y": 663.2857142857141
+      },
+      "id": "9GBkaGORaevxbWFe"
     }
   ],
   "variables": {
@@ -777,7 +847,6 @@
       "type": "any"
     }
   },
-  "tags": ["template", "pf2e", "spells", "cantrip", "PF2e Trove"],
   "description": "<p><em>Created by @Chasarooni</em></p>",
-  "id": "1CToMipjRSFhIkKq"
+  "id": "zWM1OcuTp1MSTAUA"
 }

@@ -2,7 +2,6 @@
   "name": "Guidance",
   "folder": "Spells",
   "priority": 0,
-  "tags": ["pf2e", "spells", "cantrip"],
   "nodes": [
     {
       "id": "cmlqRAbNU6Qhyhgz",

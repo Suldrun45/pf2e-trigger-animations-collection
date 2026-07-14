@@ -7,8 +7,8 @@
     {
       "id": "tgz0DvNZrKHE3aEp",
       "position": {
-        "x": 393,
-        "y": 195
+        "x": 744.4285714285714,
+        "y": 259.2857142857143
       },
       "type": "animation-event",
       "inputs": {
@@ -25,7 +25,7 @@
     {
       "type": "sound",
       "position": {
-        "x": 920.2087912087911,
+        "x": 1377.2087912087911,
         "y": 87.21428571428578
       },
       "id": "Bm9iFVSzMflPNg44",
@@ -39,7 +39,7 @@
       },
       "outs": {
         "out": {
-          "connection": "BGeO2mg6ZCHPlHjM:ins:in"
+          "connection": "bNKaDmpPTZ5C1VQs:ins:in"
         }
       }
     },
@@ -51,8 +51,8 @@
         }
       },
       "position": {
-        "x": 629,
-        "y": 209.14999999999998
+        "x": 980.4285714285714,
+        "y": 273.43571428571425
       },
       "id": "1wxhYxfQtfv38uPL",
       "custom": {
@@ -82,27 +82,6 @@
       }
     },
     {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "Bm9iFVSzMflPNg44:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 1204.2857142857142,
-        "y": 85.96428571428578
-      },
-      "id": "BGeO2mg6ZCHPlHjM",
-      "outs": {
-        "out": {
-          "connection": "bNKaDmpPTZ5C1VQs:ins:in"
-        }
-      }
-    },
-    {
       "type": "snd-location",
       "state": "atLocation",
       "inputs": {
@@ -114,31 +93,10 @@
         }
       },
       "position": {
-        "x": 1430.7857142857142,
-        "y": 89.11428571428581
+        "x": 1666.7857142857142,
+        "y": 88.11428571428581
       },
       "id": "bNKaDmpPTZ5C1VQs",
-      "outs": {
-        "out": {
-          "connection": "53cTYUGO8GtMg2yr:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "Bm9iFVSzMflPNg44:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 1645.7857142857142,
-        "y": 84.96428571428572
-      },
-      "id": "53cTYUGO8GtMg2yr",
       "outs": {
         "out": {
           "connection": "a6EDFCLfxFFvvBw4:ins:in"
@@ -172,8 +130,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 1165.6428571428564,
-        "y": 676.4404761904759
+        "x": 1391.6428571428564,
+        "y": 679.4404761904759
       },
       "id": "ha9vihqIAHdn6UCY",
       "inputs": {
@@ -184,27 +142,6 @@
           "connection": "1wxhYxfQtfv38uPL:outputs:RhcoqEkjj012hJ2w"
         }
       },
-      "outs": {
-        "out": {
-          "connection": "7fR7xGe0RfDxSL6j:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-volume",
-      "inputs": {
-        "sound": {
-          "connection": "ha9vihqIAHdn6UCY:outputs:sound"
-        },
-        "volume": {
-          "value": 0.5
-        }
-      },
-      "position": {
-        "x": 1449.7197802197798,
-        "y": 675.1904761904759
-      },
-      "id": "7fR7xGe0RfDxSL6j",
       "outs": {
         "out": {
           "connection": "oYE2WVQwVQVwTlOx:ins:in"
@@ -229,28 +166,7 @@
       "id": "oYE2WVQwVQVwTlOx",
       "outs": {
         "out": {
-          "connection": "qGw0z7Prd6MpVRLh:ins:in"
-        }
-      }
-    },
-    {
-      "type": "snd-spatial",
-      "inputs": {
-        "sound": {
-          "connection": "ha9vihqIAHdn6UCY:outputs:sound"
-        },
-        "alwaysForGMs": {
-          "value": true
-        }
-      },
-      "position": {
-        "x": 1891.2197802197798,
-        "y": 674.1904761904759
-      },
-      "id": "qGw0z7Prd6MpVRLh",
-      "outs": {
-        "out": {
-          "connection": "cPMGXGm2dcriSG2C:ins:in"
+          "connection": "a9smheMDsTesPIdT:ins:in"
         }
       }
     },
@@ -426,9 +342,27 @@
         "y": 635.7777777777777
       },
       "id": "fjt6Cr5Atjt2FOiD"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "ha9vihqIAHdn6UCY:outputs:sound"
+        }
+      },
+      "position": {
+        "x": 1913,
+        "y": 670.25
+      },
+      "id": "a9smheMDsTesPIdT",
+      "outs": {
+        "out": {
+          "connection": "cPMGXGm2dcriSG2C:ins:in"
+        }
+      }
     }
   ],
-  "id": "XPqhLm0YnONkeCRZ",
+  "id": "uvCNjvgQmn8WpuUb",
   "variables": {
     "tgz0DvNZrKHE3aEp:outputs:sources": {
       "isArray": true,

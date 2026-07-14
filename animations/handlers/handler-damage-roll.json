@@ -49,7 +49,7 @@
       },
       "inputs": {
         "name": {
-          "value": "damage-roll:handler"
+          "value": []
         }
       }
     },
@@ -335,7 +335,6 @@
     }
   ],
   "id": "9O5AxVGqfSJZkwH5",
-  "tags": ["PF2e Trove", "handlers"],
   "variables": {
     "5Yy2lI6uhThGLmVb:outputs:zlri3FyTeHzt34RB": {
       "isArray": true,
