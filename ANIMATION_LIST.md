@@ -21,7 +21,8 @@
   - [PF2e](#pf2e)
     - [Class Features](#class-features)
       - [Barbarian](#barbarian)
-  - [Rogue](#rogue)
+      - [Rogue](#rogue)
+      - [Runesmith](#runesmith)
     - [Spells](#spells)
       - [Cantrips](#cantrips)
       - [Focus Spells](#focus-spells)
@@ -90,9 +91,15 @@
 
 - Rage 🔊🆓 (✍🏼 @Chasarooni)
 
-## Rogue
+#### Rogue
 
 - Sneak Attack 🔇🆓 (✍🏼 @Chasarooni)
+
+#### Runesmith
+
+- Rune: Atryl, Rune of Fire 🔊🆓 (✍🏼 @Chasarooni)
+- Rune: Esvadir, Rune of Whetstones 🔊🆓 (✍🏼 @Chasarooni)
+- Rune: Ranshu, Rune of Thunder 🔊🆓 (✍🏼 @Chasarooni)
 
 ### Spells
 
@@ -134,6 +141,8 @@
 #### Rituals
 
 ### Basic Actions
+
+- Raise a Shield 🔇🆓✅ (✍🏼 @Chasarooni)
 
 ### Conditions
 
