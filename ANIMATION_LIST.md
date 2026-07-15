@@ -108,6 +108,7 @@
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
+- Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
 
 #### Focus Spells
 

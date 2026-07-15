@@ -1,5 +1,9 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Void Warp (@Chasarooni)
+
 ## 0.7.1
 
 - **Update**
