@@ -1,6 +1,6 @@
 ## Unreleased
 
-## 0.7.8
+## 0.7.7
 
 - **Animations**
   - **New**
