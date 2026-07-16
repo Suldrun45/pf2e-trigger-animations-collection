@@ -1,95 +1,99 @@
 <script>
-    const lowerCaseThenUpperCaseRE = /([a-z])([A-Z])/g;
-    const nonWordCharacterRE = /[^\w\s-]/g;
-    const nonWordCharacterHyphenOrSpaceRE = /[^\w\s-]/g;
-    const upperOrWordBoundariedLowerRE = /([A-Z]|\b[a-z])/g;
-    function sluggify(text2, { camel = null } = {}) {
-        if (typeof text2 != "string")
-            return (console.warn("Non-string argument passed to `sluggify`"), "");
-        if (text2 === "-") return text2;
-        switch (camel) {
-            case null:
-                return text2
-                    .replace(lowerCaseThenUpperCaseRE, "$1-$2")
-                    .toLowerCase()
-                    .replace(/['’]/g, "")
-                    .replace(nonWordCharacterRE, " ")
-                    .trim()
-                    .replace(/[-\s]+/g, "-");
-            case "bactrian": {
-                const dromedary = sluggify(text2, { camel: "dromedary" });
-                return dromedary.charAt(0).toUpperCase() + dromedary.slice(1);
-            }
-            case "dromedary":
-                return text2
-                    .replace(nonWordCharacterHyphenOrSpaceRE, "")
-                    .replace(/[-_]+/g, " ")
-                    .replace(upperOrWordBoundariedLowerRE, (part, index2) =>
-                        index2 === 0 ? part.toLowerCase() : part.toUpperCase(),
-                    )
-                    .replace(/\s+/g, "");
-            default:
+  const lowerCaseThenUpperCaseRE = /([a-z])([A-Z])/g;
+  const nonWordCharacterRE = /[^\w\s-]/g;
+  const nonWordCharacterHyphenOrSpaceRE = /[^\w\s-]/g;
+  const upperOrWordBoundariedLowerRE = /([A-Z]|\b[a-z])/g;
+  function sluggify(text2, { camel = null } = {}) {
+    if (typeof text2 != "string")
+      return (console.warn("Non-string argument passed to `sluggify`"), "");
+    if (text2 === "-") return text2;
+    switch (camel) {
+      case null:
+        return text2
+          .replace(lowerCaseThenUpperCaseRE, "$1-$2")
+          .toLowerCase()
+          .replace(/['’]/g, "")
+          .replace(nonWordCharacterRE, " ")
+          .trim()
+          .replace(/[-\s]+/g, "-");
+      case "bactrian": {
+        const dromedary = sluggify(text2, { camel: "dromedary" });
+        return dromedary.charAt(0).toUpperCase() + dromedary.slice(1);
+      }
+      case "dromedary":
+        return text2
+          .replace(nonWordCharacterHyphenOrSpaceRE, "")
+          .replace(/[-_]+/g, " ")
+          .replace(upperOrWordBoundariedLowerRE, (part, index2) =>
+            index2 === 0 ? part.toLowerCase() : part.toUpperCase(),
+          )
+          .replace(/\s+/g, "");
+      default:
+    }
+  }
+
+  function downloadAnimation(obj) {
+    const baseName = sluggify(obj.name);
+    const fileName = baseName + ".json";
+
+    const jsonStr = JSON.stringify(obj, null, 2) + "\n";
+    const blob = new Blob([jsonStr], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = fileName;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    setTimeout(() => {
+      URL.revokeObjectURL(url);
+    }, 500);
+  }
+
+  function handleSplit() {
+    const fileInput = document.getElementById("export");
+    const splitBtn = document.getElementById("splitBtn");
+    const file = fileInput.files[0];
+    if (!file) {
+      return;
+    }
+
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      try {
+        const raw = e.target.result;
+        const data = JSON.parse(raw);
+
+        for (let i = 0; i < data.length; i++) {
+          downloadAnimation(data[i], i);
         }
-    }
 
-    function downloadAnimation(obj) {
-        const baseName = sluggify(obj.name)
-        const fileName = baseName + '.json';
-
-        const jsonStr = JSON.stringify(obj, null, 2) + "\n";
-        const blob = new Blob([jsonStr], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = fileName;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        setTimeout(() => { URL.revokeObjectURL(url); }, 500);
-    }
-
-    function handleSplit() {
-        const fileInput = document.getElementById('export');
-        const splitBtn = document.getElementById('splitBtn');
-        const file = fileInput.files[0];
-        if (!file) {
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            try {
-                const raw = e.target.result;
-                const data = JSON.parse(raw);
-
-                for (let i = 0; i < data.length; i++) {
-                    downloadAnimation(data[i], i);
-                }
-
-                alert(`Exported ${data.length} element(s) with their sluggified names`);
-            } catch (err) {
-                alert('Error parsing JSON: ' + err.message);
-            }
-        };
-        reader.readAsText(file);
-    }
+        alert(`Exported ${data.length} element(s) with their sluggified names`);
+      } catch (err) {
+        alert("Error parsing JSON: " + err.message);
+      }
+    };
+    reader.readAsText(file);
+  }
 </script>
 <html>
-
-<head>
+  <head>
     <title>JSON Array Splitter</title>
-</head>
+  </head>
 
-<body>
-    <br>
+  <body>
+    <br />
     <label for="export">Upload your result of "Export Triggers":</label>
-    <br>
-    <input type="file" id="export" name="export" accept=".json,application/json">
-    <br>
-    <br>
+    <br />
+    <input
+      type="file"
+      id="export"
+      name="export"
+      accept=".json,application/json"
+    />
+    <br />
+    <br />
     <button id="splitBtn" onclick="handleSplit()">Split & Download</button>
-
-</body>
-
+  </body>
 </html>
