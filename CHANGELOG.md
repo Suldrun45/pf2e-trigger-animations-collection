@@ -1,5 +1,9 @@
 ## Unreleased
 
+## 0.7.6
+
+- Fixed lingering issue with `Attack Roll Handler`
+
 ## 0.7.5
 
 - **Animations**
