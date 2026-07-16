@@ -860,6 +860,7 @@
     {
       "type": "snd-flow",
       "inputs": {
+      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "WUHiTQyCbirfizIm:outputs:sound"
         }
@@ -878,6 +879,7 @@
     {
       "type": "snd-flow",
       "inputs": {
+      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "NVkXiURlNapKOTuY:outputs:sound"
         }

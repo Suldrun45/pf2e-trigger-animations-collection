@@ -1055,6 +1055,7 @@
     {
       "type": "snd-flow",
       "inputs": {
+      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "8GFoAkgVbpDOYa1O:outputs:sound"
         }

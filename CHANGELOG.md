@@ -1,5 +1,12 @@
 ## Unreleased
 
+## 0.7.5
+
+- **Updated**
+  - `Attack Roll - Handler` - now accounts for NPC strikes
+  - `Weapon Group: Hammer` - modified how returning property rune is checked
+  - Updated all animations to fix a bug that caused the `Trove Sound` Preset to not be applied (including on templates)
+
 ## 0.7.4
 
 - **Updated**

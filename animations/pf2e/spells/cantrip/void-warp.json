@@ -605,6 +605,7 @@
       },
       "id": "ZH2pwj08gW8ZVJRN",
       "inputs": {
+      "preset": { "value": "troveSound" },
         "sound": {
           "connection": "8GFoAkgVbpDOYa1O:outputs:sound"
         },
