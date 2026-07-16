@@ -13,8 +13,6 @@ Pack of animations for Trigger Animations! See the fully supported list [here](/
 
 ### Trove Animation Quirks
 
-Have an export of `Export Triggers` you want to split into individual files, [Click Here](https://chasarooniz.github.io/pf2e-trigger-animations-collection/)
-
 The following are triggers specific to Trigger Animation Trove, for all other triggers see [Trigger Animations](https://wiki.mrvauxs.net/reference/trigger-animations/#included-pf2e-triggers)
 
 | Event                           | Original Trigger                                   | Trove Trigger                                            |
