@@ -1,8 +1,12 @@
 ## Unreleased
 
+## 0.7.2
+
 - **Animations**
   - **New**
     - Void Warp (@Chasarooni)
+- **Updated**
+  - `Effect Trove Template` added missing play node (🐛 @RedB)
 
 ## 0.7.1
 

@@ -1351,15 +1351,17 @@ export const TEMPLATES = {
         {
           type: "snd-flow",
           inputs: {
-            sound: {
-              connection: "VXcMKxYVnVYA7ES4:outputs:sound",
-            },
+            sound: { connection: "VXcMKxYVnVYA7ES4:outputs:sound" },
           },
-          position: {
-            x: 3265.8214285714284,
-            y: 192.9999999999999,
-          },
+          position: { x: 3265.8214285714284, y: 192.9999999999999 },
           id: "bicl81oqFkM3yZc2",
+          outs: { out: { connection: "5Cmvax90BUsu2QtK:ins:in" } },
+        },
+        {
+          type: "play",
+          position: { x: 3539.923076923077, y: 197.5 },
+          id: "5Cmvax90BUsu2QtK",
+          inputs: { local: { value: true } },
         },
       ],
       variables: {
