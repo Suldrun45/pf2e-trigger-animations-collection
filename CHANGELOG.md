@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.8.5
+
+- **Updated**
+  - Increased minimum `GGG` version to `0.0.19`
+    - _A Metric ton of Sci Fi SFX for our SF2e Players_
+  - Updated to `Trigger Animations` version `0.6.1`
+    - _Support for SF2e Weapon Groups, and Base Items out of the box as well as NPC Strike Support_
+
 ## 0.8.4
 
 - Fixed last issue with `Handler: Template`
