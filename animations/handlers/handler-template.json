@@ -28,7 +28,7 @@
       },
       "inputs": {
         "name": {
-          "value": "attack:*"
+          "value": "template:*"
         }
       }
     },
