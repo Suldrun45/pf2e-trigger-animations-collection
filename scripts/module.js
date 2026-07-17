@@ -38,6 +38,7 @@ Hooks.once("ready", async function () {
 // }
 
 function registerPresets() {
+  // Sound
   Sequencer.Presets.add("troveSound", (sound, args) => {
     const radius =
       args?.radius ??
@@ -52,5 +53,17 @@ function registerPresets() {
       .panSound()
       .muffledEffect({ type: "lowpass", intensity: 4 })
       .volume(0.5);
+  });
+
+  // Still Image Pop up Top of Character
+  Sequencer.Presets.add("troveIconTop", (effect, args) => {
+    return effect
+      .scaleToObject(0.5)
+      .anchor({ x: 0.5, y: 1.2 })
+      .spriteAnchor({ x: 0.5, y: 1 })
+      .duration(2000)
+      .fadeIn(500)
+      .fadeOut(1000)
+      .scaleIn(0.5, 250);
   });
 }

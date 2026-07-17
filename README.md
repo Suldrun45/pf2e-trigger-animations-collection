@@ -31,12 +31,21 @@ The following are presets for particular sources
 
 **Sound**
 
-- `troveSound` - Gives the sound the following traits
+- `troveSound` - Makes sound local (aka on the grid)
   - A radius equal to the large of the two (Grid Width or Height)
   - Always Play for GM
   - Pan Sound
   - Muffled Effect - Low Pass Filter
   - Volume to `0.5` (add a volume node afterwards to override this)
+
+**Effect**
+
+- `troveIconTop` - Shows a still frame icon on top of token for a few seconds
+  - Scale to object `0.5`
+  - Sets anchor + Sprite anchor to place it on top of token
+  - Duration `2000`
+  - Fade in `500`, Fade out `1000`
+  - Scale in `0.5` in `250` ms
 
 ## Animation Submission Guidelines
 

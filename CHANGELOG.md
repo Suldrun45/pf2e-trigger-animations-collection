@@ -1,12 +1,24 @@
 ## Unreleased
 
+## 0.8.7
+
 - **Animations**
   - **New**
     - Weapon Group: Laser, Condition: Glitching (@Suldrun45)
   - **Updated**
     - Slowed, Stunned _Fixed Persistence_ (@Suldrun45)
+- **New**
+  - **Preset**
+    - `troveIconTop` - Shows a still frame icon on top of token for a few seconds
+      - Scale to object `0.5`
+      - Sets anchor + Sprite anchor to place it on top of token
+      - Duration `2000`
+      - Fade in `500`, Fade out `1000`
+      - Scale in `0.5` in `250` ms
 - **Updated**
   - Added safeguard against double calling the start animations
+  - Increased minimum `GGG` version to `0.0.21`
+    - _Adds more Air SFX + Reload Icon_
 
 ## 0.8.6
 
