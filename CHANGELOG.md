@@ -4,8 +4,10 @@
 
 - **New**
   - Added a new handler `Handler: Template` for the SF2e System
-    - All submitted animations with a `template:` trigger should use the `trove:template` trigger
+    - All submitted animations with a `template:` trigger should use the `trove-template:` trigger
     - _This is so that SF2e can support attack additives for their area weapons_
+- **Updated**
+  - Updated all animations with trigger `template:` to new `trove-template:`
 
 ## 0.7.8
 
