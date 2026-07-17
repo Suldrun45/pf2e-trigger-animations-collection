@@ -2,7 +2,7 @@
 
 ## 0.8.6
 
-- Forgot to plug in the name to `Handler: Template` (🐛 @Suldrun45)
+- Fixed issue where name was not plugged in to `Handler: Template` (:bug: @Suldrun45)
 
 ## 0.8.5
 
