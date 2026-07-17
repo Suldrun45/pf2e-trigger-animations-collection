@@ -177,8 +177,8 @@
 - Prone 🔇🆓✅ (✍🏼 @Chasarooni)
 - Quickened 🔇🆓✅ (✍🏼 @Chasarooni)
 - Sickened 🔇🆓✅ (✍🏼 @Chasarooni)
-- Slowed 🔇🆓✅ (✍🏼 @Chasarooni)
-- Stunned 🔇🆓✅ (✍🏼 @Chasarooni)
+- Slowed 🔇🆓✅ (✍🏼 @Chasarooni, 🛠️ @Suldrun45)
+- Stunned 🔇🆓✅ (✍🏼 @Chasarooni, 🛠️ @Suldrun45)
 - Stupefied 🔇🆓✅ (✍🏼 @Chasarooni)
 - Unconscious 🔇🆓✅ (✍🏼 @Chasarooni)
 - Wounded 🔇🆓✅ (✍🏼 @Chasarooni)
@@ -284,6 +284,8 @@
 
 ### Conditions
 
+- Glitching 🔇🆓✅ (✍🏼 @Suldrun45)
+
 ### Feats
 
 #### Class Feats
@@ -301,6 +303,8 @@
 #### Weapons
 
 ##### Group
+
+- Laser 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ##### Base Item
 

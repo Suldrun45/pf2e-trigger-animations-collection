@@ -14,8 +14,11 @@ Hooks.once("triggerEngine.registerTriggers", (registerTriggers) => {
 Hooks.once("triggerAnimations.ready", async (api) => {
   registerTriggerAnimationTemplates();
   if (game.user.isGM) {
-    await askToEnableNewTriggersDialog();
-    askToAddNewAnimationsDialog();
+    if (!window?.troveAnimationsAsked) {
+      window.troveAnimationsAsked = true;
+      await askToEnableNewTriggersDialog();
+      askToAddNewAnimationsDialog();
+    }
   }
   // modifyTriggerAnimationTemplates();
 });

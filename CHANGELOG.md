@@ -1,8 +1,16 @@
 ## Unreleased
 
+- **Animations**
+  - **New**
+    - Weapon Group: Laser, Condition: Glitching (@Suldrun45)
+  - **Updated**
+    - Slowed, Stunned _Fixed Persistence_ (@Suldrun45)
+- **Updated**
+  - Added safeguard against double calling the start animations
+
 ## 0.8.6
 
-- Fixed issue where name was not plugged in to `Handler: Template` (:bug: @Suldrun45)
+- Fixed issue where name was not plugged in to `Handler: Template` (🐛 @Suldrun45)
 
 ## 0.8.5
 
