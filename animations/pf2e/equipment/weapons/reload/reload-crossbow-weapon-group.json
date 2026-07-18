@@ -7,8 +7,8 @@
     {
       "id": "g0I03xkXxHkscoUJ",
       "position": {
-        "x": 247,
-        "y": 208
+        "x": 291,
+        "y": 228
       },
       "type": "animation-event",
       "inputs": {
@@ -25,8 +25,8 @@
     {
       "type": "sound",
       "position": {
-        "x": 756.9230769230769,
-        "y": 220.5
+        "x": 1761.1452991452988,
+        "y": 242.16666666666663
       },
       "id": "GvONb7qWr07VO2lo",
       "inputs": {
@@ -55,8 +55,8 @@
         }
       },
       "position": {
-        "x": 1081,
-        "y": 209.14999999999998
+        "x": 2036.2222222222222,
+        "y": 238.8166666666666
       },
       "id": "1oM2eRY1OHOR8FQB",
       "outs": {
@@ -73,8 +73,8 @@
         }
       },
       "position": {
-        "x": 511,
-        "y": 231.14999999999998
+        "x": 555,
+        "y": 251.14999999999998
       },
       "id": "Cx6Yr3QzcGgQlX8i",
       "custom": {
@@ -86,20 +86,28 @@
             "slug": "path",
             "isArray": false,
             "type": "text"
+          },
+          "GMc3p5wiEVLTCZWm": {
+            "id": "GMc3p5wiEVLTCZWm",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
           }
         }
       },
       "outs": {
         "out": {
-          "connection": "GvONb7qWr07VO2lo:ins:in"
+          "connection": "YpsOQrd63hniPA2G:ins:in"
         }
       }
     },
     {
       "type": "play",
       "position": {
-        "x": 1569.923076923077,
-        "y": 199.5
+        "x": 2525.145299145299,
+        "y": 229.16666666666663
       },
       "id": "KKe9CVOwO0N6EP8b",
       "inputs": {
@@ -119,8 +127,8 @@
         }
       },
       "position": {
-        "x": 1309,
-        "y": 203.25
+        "x": 2264.2222222222217,
+        "y": 232.91666666666663
       },
       "id": "hzBNutR2ObVve7Mf",
       "outs": {
@@ -128,7 +136,95 @@
           "connection": "KKe9CVOwO0N6EP8b:ins:in"
         }
       }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 772.367521367521,
+        "y": 238.27777777777777
+      },
+      "id": "YpsOQrd63hniPA2G",
+      "inputs": {
+        "origin": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:GMc3p5wiEVLTCZWm"
+        },
+        "name": {
+          "connection": "Cx6Yr3QzcGgQlX8i:outputs:ywq283M5rtzgAcz3"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "jvgFwIKNLtYlvpUR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "YpsOQrd63hniPA2G:outputs:effect"
+        },
+        "file": {
+          "value": "ggg-vfx.actions.reload.still.01"
+        }
+      },
+      "position": {
+        "x": 1063.4722222222222,
+        "y": 242.72222222222217
+      },
+      "id": "jvgFwIKNLtYlvpUR",
+      "outs": {
+        "out": {
+          "connection": "nrb1vyfPOBhMAhxt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "advanced",
+      "inputs": {
+        "effect": {
+          "connection": "YpsOQrd63hniPA2G:outputs:effect"
+        },
+        "preset": {
+          "value": "troveIconTop"
+        }
+      },
+      "position": {
+        "x": 1531.8055555555552,
+        "y": 241.0555555555555
+      },
+      "id": "9crbTh0bKFPoOFEW",
+      "outs": {
+        "out": {
+          "connection": "GvONb7qWr07VO2lo:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "YpsOQrd63hniPA2G:outputs:effect"
+        },
+        "location": {
+          "connection": "g0I03xkXxHkscoUJ:outputs:sources"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1309.3333333333335,
+        "y": 243.48333333333323
+      },
+      "id": "nrb1vyfPOBhMAhxt",
+      "outs": {
+        "out": {
+          "connection": "9crbTh0bKFPoOFEW:ins:in"
+        }
+      }
     }
   ],
-  "id": "Go8YkzmiVJCKJEzA"
+  "id": "KQc2CFJjA5LtAylx"
 }

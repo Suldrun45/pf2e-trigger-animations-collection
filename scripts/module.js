@@ -61,9 +61,10 @@ function registerPresets() {
       .scaleToObject(0.5)
       .anchor({ x: 0.5, y: 1.2 })
       .spriteAnchor({ x: 0.5, y: 1 })
-      .duration(2000)
+      .duration(2500)
       .fadeIn(500)
-      .fadeOut(1000)
-      .scaleIn(0.5, 250);
+      .fadeOut(1500)
+      .scaleOut(0.5, 1500, { ease: "easeInQuad" })
+      .scaleIn(0.5, 750, { ease: "easeOutBack" });
   });
 }

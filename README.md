@@ -43,9 +43,9 @@ The following are presets for particular sources
 - `troveIconTop` - Shows a still frame icon on top of token for a few seconds
   - Scale to object `0.5`
   - Sets anchor + Sprite anchor to place it on top of token
-  - Duration `2000`
-  - Fade in `500`, Fade out `1000`
-  - Scale in `0.5` in `250` ms
+  - Duration `2500`
+  - Fade in `500`, Fade out `1500`
+  - Scale in `0.5` in `750` ms easeInQuad,Scale out `0.5` in `1500` easeOutBack
 
 ## Animation Submission Guidelines
 

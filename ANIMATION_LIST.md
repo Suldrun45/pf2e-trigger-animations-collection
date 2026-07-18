@@ -239,10 +239,10 @@
 
 ##### Reload
 
-- Crossbow (Weapon Group) 🔊 (✍🏼 @Chasarooni)
-- Firearm (Weapon Group) 🔊 (✍🏼 @Chasarooni)
-- Pepperbox 🔊 (✍🏼 @Chasarooni)
-- Slide Pistol 🔊 (✍🏼 @Chasarooni)
+- Crossbow (Weapon Group) 🆓🔊 (✍🏼 @Chasarooni)
+- Firearm (Weapon Group) 🆓🔊 (✍🏼 @Chasarooni)
+- Pepperbox 🆓🔊 (✍🏼 @Chasarooni)
+- Slide Pistol 🆓🔊 (✍🏼 @Chasarooni)
 
 ### Creatures
 

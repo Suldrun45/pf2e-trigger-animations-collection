@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.8.8
+
+- **Animations**
+  - **Updated**
+    - Reload: Firearm (Weapon Group), Reload: Crossbow (Weapon Group), Reload: Pepperbox, Reload: Slide Pistol _Added visual to these animations_ (@Chasarooni)
+- **Updated**
+  - Made `troveIconTop` Preset better visually
+
 ## 0.8.7
 
 - **Animations**
@@ -9,12 +17,7 @@
     - Slowed, Stunned _Fixed Persistence_ (@Suldrun45)
 - **New**
   - **Preset**
-    - `troveIconTop` - Shows a still frame icon on top of token for a few seconds
-      - Scale to object `0.5`
-      - Sets anchor + Sprite anchor to place it on top of token
-      - Duration `2000`
-      - Fade in `500`, Fade out `1000`
-      - Scale in `0.5` in `250` ms
+    - `troveIconTop` - Shows a still frame icon on top of token for a few seconds _more details on the README_
 - **Updated**
   - Added safeguard against double calling the start animations
   - Increased minimum `GGG` version to `0.0.21`
