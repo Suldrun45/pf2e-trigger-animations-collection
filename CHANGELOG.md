@@ -1,5 +1,13 @@
 ## Unreleased
 
+## 0.8.11
+
+- **Animations**
+  - **Updated**
+    - Electric Arc _removed console logs_ (@ChasarooniZ)
+- **Updated**
+  - Fixed issues with animations and templates that failed to have both `preload` and `local` on their `Play` nodes
+
 ## 0.8.10
 
 - **Animations**

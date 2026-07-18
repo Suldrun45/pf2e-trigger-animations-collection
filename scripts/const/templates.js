@@ -418,6 +418,9 @@ export const TEMPLATES = {
           },
           id: "61SLPk5LsvmqYweA",
           inputs: {
+            preload: {
+              value: true,
+            },
             local: {
               value: true,
             },
@@ -895,6 +898,9 @@ export const TEMPLATES = {
           },
           id: "61SLPk5LsvmqYweA",
           inputs: {
+            preload: {
+              value: true,
+            },
             local: {
               value: true,
             },
@@ -1221,6 +1227,14 @@ export const TEMPLATES = {
           type: "play",
           position: { x: 3549.8278388278386, y: 195.50000000000006 },
           id: "PgvfXwA2HtuQCXdg",
+          inputs: {
+            preload: {
+              value: true,
+            },
+            local: {
+              value: true,
+            },
+          },
         },
       ],
       variables: {
