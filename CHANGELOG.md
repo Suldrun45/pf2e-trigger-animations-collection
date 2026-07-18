@@ -6,6 +6,7 @@
   - **New**
     - Deity Strike, Fist, Gauntlet, Healer's Glove, Lay on Hands(@ChasarooniZ)
     - Weapon Group: Swords (@MrVauxs modified by @ChasarooniZ)
+    - Suppressed (@Suldrun45)
   - **Updated**
     - Claw, Weapon Group: Hammer, Weapon Group: Polearms, Weapon Group: Hammer, Greatpick _Added Randomize Mirror Y for melee attacks_ (@ChasarooniZ)
 - **Updated**
