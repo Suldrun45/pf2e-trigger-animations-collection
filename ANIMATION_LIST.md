@@ -113,6 +113,7 @@
 #### Cantrips
 
 - Buzzing Bites 🔊🆓 (✍🏼 @Chasarooni)
+- Electric Arc 🔊🆓✅ (✍🏼 @Chasarooni)
 - Guidance 🔇🆓 (✍🏼 @Chasarooni)
 - Scatter Scree 🔊🆓✅ (✍🏼 @Chasarooni)
 - Void Warp 🔊🆓✅ (✍🏼 @Chasarooni)
@@ -151,6 +152,8 @@
 
 ### Basic Actions
 
+- Grapple 🔊🆓✅ (✍🏼 @Chasarooni)
+- Renewed Vigor 🔊🆓✅ (✍🏼 @Chasarooni)
 - Raise a Shield 🔇🆓✅ (✍🏼 @Chasarooni)
 
 ### Conditions
@@ -314,11 +317,21 @@
 
 ##### Group
 
-- Laser 🔊🆓✅ (✍🏼 @Suldrun45)
+- Corrosive (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Cryo (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Laser (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Plasma (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Projectile (Area & Automatic) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Projectile (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Sniper (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Shock (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
+- Sonic (Ranged) 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ##### Base Item
 
+- Flamethrower 🔊🆓✅ (✍🏼 @Suldrun45)
 - Plasma Cannon 🔊🆓✅ (✍🏼 @Suldrun45)
+- Rotolaser 🔊🆓✅ (✍🏼 @Suldrun45)
 
 ##### Specific
 

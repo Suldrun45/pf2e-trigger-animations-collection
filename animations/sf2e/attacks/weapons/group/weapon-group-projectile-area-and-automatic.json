@@ -2,7 +2,6 @@
   "name": "Weapon Group: Projectile (Area and Automatic)",
   "folder": "Attacks",
   "priority": -100,
-  "tags": ["PF2e Trove", "sf2e", "weapons", "attacks"],
   "nodes": [
     {
       "id": "uLphrB1QaNytPLUt",

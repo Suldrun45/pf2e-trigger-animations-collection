@@ -1,5 +1,16 @@
 ## Unreleased
 
+## 0.8.10
+
+- **Animations**
+  - **New**
+    - Grapple, Tumble Through, Renewed Vigor, Electric Arc (@ChasarooniZ)
+    - Flamethrower, Rotolaser, Weapon Group: Corrosive (Ranged), Weapon Group: Cryo (Ranged), Weapon Group: Plasma (Ranged), Weapon Group: Projectile (Area & Automatic), Weapon Group: Sonic (Ranged), Weapon Group: Sniper (Ranged), Weapon Group: Shock (Ranged), Weapon Group: Projectile (Ranged) (@Suldrun45)
+  - **Updated**
+    - Plasma Cannon _Add filter to free version_ (@Suldrun45)
+- **Updated**
+  - Updated to `Trigger Animations` version `0.6.3`
+
 ## 0.8.9
 
 - **Animations**
