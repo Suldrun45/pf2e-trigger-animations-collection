@@ -109,6 +109,9 @@
         },
         "medium": {
           "connection": "87SiRHejTECb4V7Q:ins:in"
+        },
+        "low": {
+          "connection": "87SiRHejTECb4V7Q:ins:in"
         }
       }
     },
