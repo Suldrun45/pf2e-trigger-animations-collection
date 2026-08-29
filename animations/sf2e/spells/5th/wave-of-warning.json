@@ -439,6 +439,9 @@
         },
         "location": {
           "connection": "wLyWWJOPWqreDEBI:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

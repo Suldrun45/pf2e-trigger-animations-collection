@@ -246,6 +246,9 @@
         },
         "location": {
           "connection": "tMgi9TS8izk3YKKF:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

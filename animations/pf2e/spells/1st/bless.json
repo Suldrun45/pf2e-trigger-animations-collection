@@ -1018,6 +1018,9 @@
         },
         "location": {
           "connection": "1576a899c498f990:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -1137,6 +1140,9 @@
         },
         "location": {
           "connection": "42ae8caf3ec828bd:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

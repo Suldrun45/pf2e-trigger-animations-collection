@@ -340,6 +340,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -436,6 +439,9 @@
         },
         "sound": {
           "connection": "Ca8MFQ7IexHxQMA5:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

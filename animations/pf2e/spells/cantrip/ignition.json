@@ -209,6 +209,9 @@
         },
         "moveTowards": {
           "connection": "ao5cUKHv0jZyOtdh:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -745,6 +748,9 @@
         },
         "toTarget": {
           "connection": "o5DAmzrYSh72kOuJ:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -1056,11 +1062,5 @@
       "label": "Targets",
       "type": "target"
     }
-  },
-  "tags": [
-    "PF2e Trove",
-    "pf2e",
-    "spells",
-    "cantrip"
-  ]
+  }
 }

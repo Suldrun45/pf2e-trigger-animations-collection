@@ -649,6 +649,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -755,6 +758,9 @@
         },
         "toTarget": {
           "connection": "gsT4tpS0Ulv2HOvo:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

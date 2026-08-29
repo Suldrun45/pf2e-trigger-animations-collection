@@ -626,6 +626,9 @@
         },
         "location": {
           "connection": "RTe6SZsKNKISl3Fa:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

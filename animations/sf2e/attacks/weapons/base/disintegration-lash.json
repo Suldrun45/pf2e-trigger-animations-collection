@@ -456,6 +456,9 @@
         },
         "location": {
           "connection": "cPQUrvcm7aNwRabf:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

@@ -404,6 +404,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -490,6 +493,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

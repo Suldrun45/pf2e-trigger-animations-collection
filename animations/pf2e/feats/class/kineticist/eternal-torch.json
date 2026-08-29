@@ -469,6 +469,11 @@
         "out": {
           "connection": "nXkVf7MmCLtLWJiY:ins:in"
         }
+      },
+      "inputs": {
+        "exitOnEmpty": {
+          "value": "global"
+        }
       }
     },
     {

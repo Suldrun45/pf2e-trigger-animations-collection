@@ -1014,6 +1014,9 @@
         },
         "location": {
           "connection": "dOp61rh23Hww7tBj:outputs:fJotFTKlhbhPV1UQ"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

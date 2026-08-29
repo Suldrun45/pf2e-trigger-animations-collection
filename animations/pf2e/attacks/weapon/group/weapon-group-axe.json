@@ -400,6 +400,9 @@
         },
         "moveTowards": {
           "connection": "7mchn69BDFBCdpFZ:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -760,6 +763,9 @@
         },
         "moveTowards": {
           "connection": "vwOrhrqUG5ARdzIA:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -964,6 +970,9 @@
         },
         "location": {
           "connection": "tI7I0v878xGmxepi:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -1369,6 +1378,9 @@
         },
         "location": {
           "connection": "DIlYTLfWiX7ul6Ir:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

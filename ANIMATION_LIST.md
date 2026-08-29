@@ -45,7 +45,8 @@
       - [Class Feats](#class-feats)
         - [Fighter](#fighter)
         - [Kineticist](#kineticist-1)
-      - [Shared](#shared)
+        - [Monk](#monk)
+        - [Shared](#shared)
       - [General Feats](#general-feats)
       - [Skill Feats](#skill-feats)
       - [Archetype Feats](#archetype-feats)
@@ -147,8 +148,10 @@
 - Garden of Healing 🔊🆓✅ (✍🏼 @ChazPls, 🛠️ @Chasarooni)
 - Hurtling Stone 🔊🆓 (✍🏼 @Chasarooni)
 - Ignition _TODO, Handle Psychic Yes + Melee somehow_ 🔊🆓 (✍🏼 @Chasarooni)
+- inner Upheaval 🔊🆓 (✍🏼 @Chasarooni)
 - Lay on Hands 🔊🆓 (✍🏼 @Chasarooni)
 - Lifelink Surge 🔊🆓✅ (✍🏼 @Dio/PorradaNoGajo)
+- Qi Rush 🔊🆓 (✍🏼 @Chasarooni)
 
 #### 1st Rank Spells
 
@@ -283,7 +286,12 @@
 - Winter's Clutch 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 - Tremor 🔊🆓✅ (✍🏼 @RunicLibrarian, 🛠️ @ChasarooniZ)
 
-#### Shared
+##### Monk
+
+- Ironblood Stance 🔊🆓 (✍🏼 @Chasarooni)
+- Stoked Flame Staance 🔊🆓 (✍🏼 @Chasarooni)
+
+##### Shared
 
 - Whirlwind Strike 🔊🆓 (✍🏼 @Chasarooni)
 
@@ -353,6 +361,7 @@
 - Shuriken 🔊🆓 (✍🏼 @Chasarooni)
 - Staff 🔊🆓 (✍🏼 @Chasarooni)
 - Tamchal Chakram 🔊🆓 (✍🏼 @Chasarooni)
+- Whip 🔊🆓 (✍🏼 @Chasarooni)
 
 ##### Specific
 
@@ -386,6 +395,7 @@
 ### Creatures Actions
 
 - Conductive Downpour 🔊🆓 (✍🏼 @Chasarooni)
+- Dance of Burning War 🔊🆓 (✍🏼 @Chasarooni)
 - Terrifying Cry 🔊🆓 (✍🏼 @Chasarooni)
 
 ## SF2e

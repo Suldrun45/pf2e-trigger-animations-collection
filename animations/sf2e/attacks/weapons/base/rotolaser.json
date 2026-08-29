@@ -243,6 +243,9 @@
         },
         "location": {
           "connection": "A46SoYvrC3KVaX68:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

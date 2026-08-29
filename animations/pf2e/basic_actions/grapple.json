@@ -624,6 +624,9 @@
         },
         "location": {
           "connection": "B65o82MnPmM3Mtg6:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -795,6 +798,9 @@
         },
         "location": {
           "connection": "SCMHM11Ml7jEyiob:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

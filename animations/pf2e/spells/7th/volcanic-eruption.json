@@ -206,6 +206,9 @@
         },
         "location": {
           "connection": "R40kXsj8B9KW6tj1:outputs:tS3ScMUSZdNDGxqT"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

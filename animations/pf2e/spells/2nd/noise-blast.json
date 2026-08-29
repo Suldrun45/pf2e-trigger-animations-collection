@@ -231,6 +231,9 @@
         },
         "location": {
           "connection": "KttL9JH1MiYfIS1G:outputs:LSofy6Tqr2PjxrBp"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

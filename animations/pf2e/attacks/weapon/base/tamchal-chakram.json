@@ -355,6 +355,9 @@
         },
         "moveTowards": {
           "connection": "vwOrhrqUG5ARdzIA:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -583,6 +586,9 @@
         },
         "location": {
           "connection": "tI7I0v878xGmxepi:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -960,6 +966,9 @@
         },
         "location": {
           "connection": "nYwomSmAUMSpql4z:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

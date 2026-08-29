@@ -201,6 +201,9 @@
         },
         "location": {
           "connection": "sAu9erGftR5Cd3f9:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

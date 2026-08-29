@@ -712,6 +712,9 @@
         },
         "location": {
           "connection": "a62HaZG32QlqrZMn:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -768,6 +771,9 @@
         },
         "location": {
           "connection": "zS50qcrqpQa7wryV:outputs:tS3ScMUSZdNDGxqT"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

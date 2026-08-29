@@ -268,6 +268,9 @@
         },
         "moveTowards": {
           "connection": "4gZJ8Gm9UjlhMc4G:outputs:target"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -1163,6 +1166,9 @@
         },
         "sound": {
           "connection": "U0J4Ln92UEyHDqzK:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

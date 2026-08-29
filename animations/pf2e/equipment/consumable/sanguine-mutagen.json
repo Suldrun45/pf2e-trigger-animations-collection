@@ -90,6 +90,9 @@
         },
         "location": {
           "connection": "tgz0DvNZrKHE3aEp:outputs:sources"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -160,6 +163,9 @@
         },
         "location": {
           "connection": "fjt6Cr5Atjt2FOiD:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

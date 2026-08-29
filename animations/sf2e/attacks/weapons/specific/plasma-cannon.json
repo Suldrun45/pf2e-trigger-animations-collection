@@ -450,6 +450,9 @@
         },
         "location": {
           "connection": "XSk8GBEs4x9pjkRB:outputs:Mx7fCm94yK8vV6Pe"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -698,6 +701,9 @@
         },
         "location": {
           "connection": "tGXMZHgafPPKGvIR:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

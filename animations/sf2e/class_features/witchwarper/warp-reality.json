@@ -327,6 +327,9 @@
         },
         "location": {
           "connection": "yqTi7n6wtYkfGyyy:outputs:2Hjm8B3fvMLjwyWm"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

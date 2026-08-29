@@ -169,6 +169,9 @@
       "inputs": {
         "sound": {
           "connection": "UV06VePvBxdfAbv2:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -266,6 +269,9 @@
       "inputs": {
         "sound": {
           "connection": "4JdkeHinQrSKHbGe:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

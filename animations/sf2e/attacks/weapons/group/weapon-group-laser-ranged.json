@@ -301,6 +301,9 @@
         },
         "moveTowards": {
           "connection": "640u8S7fnE9Za1Rs:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

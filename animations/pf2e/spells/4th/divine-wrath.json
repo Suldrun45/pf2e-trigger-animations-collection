@@ -258,6 +258,9 @@
         },
         "location": {
           "connection": "sfoqCwnHatifw68J:outputs:5lHwTaU6j65uq7Rg"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -594,6 +597,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

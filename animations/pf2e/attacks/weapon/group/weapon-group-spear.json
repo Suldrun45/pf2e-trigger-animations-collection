@@ -420,6 +420,9 @@
         },
         "moveTowards": {
           "connection": "2LTRfRfUxnJ9OEBM:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -653,6 +656,9 @@
         },
         "moveTowards": {
           "connection": "DuWfnxNbs2mQPuCq:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -840,6 +846,9 @@
       "inputs": {
         "sound": {
           "connection": "JAh4RFpYnawk29bQ:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -1067,6 +1076,9 @@
         },
         "moveTowards": {
           "connection": "4V6tim9RqH9S3rRC:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

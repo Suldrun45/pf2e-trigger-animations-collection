@@ -189,6 +189,9 @@
         },
         "location": {
           "connection": "qnIQC5Eqik7HkAih:outputs:fMDGBNexeWyqGPfV"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

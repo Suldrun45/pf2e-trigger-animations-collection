@@ -179,6 +179,9 @@
         },
         "location": {
           "connection": "VgcSrc001Lm7Kn3D:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -466,6 +469,9 @@
         },
         "location": {
           "connection": "VgsSrc001Wm8Rk4L:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -1384,6 +1390,9 @@
         },
         "location": {
           "connection": "VgfTgt001Wm5Rk2L:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

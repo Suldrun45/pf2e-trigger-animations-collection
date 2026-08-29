@@ -296,6 +296,9 @@
         },
         "moveTowards": {
           "connection": "05xGHltMAbU1zRl7:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

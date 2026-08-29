@@ -292,6 +292,9 @@
         },
         "location": {
           "connection": "knpGBlYZPmZFXoje:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

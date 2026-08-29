@@ -271,6 +271,9 @@
         },
         "location": {
           "connection": "a62HaZG32QlqrZMn:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -327,6 +330,9 @@
         },
         "location": {
           "connection": "zS50qcrqpQa7wryV:outputs:tS3ScMUSZdNDGxqT"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -831,12 +837,5 @@
     }
   },
   "description": "<p>Created by @RunicLibrarian</p><p>trigger:trove-template:lava-leap</p>",
-  "tags": [
-    "PF2e Trove",
-    "pf2e",
-    "kineticist",
-    "feats",
-    "class"
-  ],
   "id": "otzKn5A587E0KT1R"
 }

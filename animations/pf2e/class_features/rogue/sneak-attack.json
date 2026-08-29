@@ -180,6 +180,9 @@
         },
         "location": {
           "connection": "X7VUHPm6sBZZPia3:outputs:targets"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

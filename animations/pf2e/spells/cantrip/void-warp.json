@@ -455,6 +455,9 @@
         },
         "location": {
           "connection": "MAfs4Gp8qyCUleDT:outputs:targets"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

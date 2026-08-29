@@ -377,6 +377,9 @@
         },
         "moveTowards": {
           "connection": "jjJBZA0YRAevytQg:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       }
     },

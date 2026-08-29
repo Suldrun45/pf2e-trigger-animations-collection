@@ -805,6 +805,9 @@
       "inputs": {
         "sound": {
           "connection": "rpEPHum3O5ZnQf2t:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {
@@ -885,6 +888,9 @@
         },
         "gridUnits": {
           "value": true
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

@@ -231,6 +231,9 @@
         },
         "location": {
           "connection": "HKeezfzy2M6VOT2F:outputs:targets"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

@@ -243,6 +243,9 @@
         },
         "location": {
           "connection": "A46SoYvrC3KVaX68:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -444,6 +447,9 @@
         },
         "sound": {
           "connection": "XwR3QqsVa1TsBFuX:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -465,6 +471,9 @@
         },
         "sound": {
           "connection": "0l72rnNhYHi3PEKd:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -590,6 +599,9 @@
         },
         "sound": {
           "connection": "B3JeNk9MzEnV32C3:outputs:sound"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

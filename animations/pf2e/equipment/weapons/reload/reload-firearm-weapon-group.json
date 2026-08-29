@@ -74,6 +74,9 @@
         },
         "location": {
           "connection": "g0I03xkXxHkscoUJ:outputs:sources"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

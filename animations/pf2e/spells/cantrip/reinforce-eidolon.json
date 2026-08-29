@@ -293,6 +293,9 @@
         },
         "location": {
           "connection": "PCZ1bXG1wnUBU0ao:outputs:sources"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
@@ -353,6 +356,9 @@
         },
         "location": {
           "connection": "OxYXdZsK9NKDjP2S:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

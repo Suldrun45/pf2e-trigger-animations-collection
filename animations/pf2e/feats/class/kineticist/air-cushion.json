@@ -188,6 +188,9 @@
         },
         "location": {
           "connection": "NVXncGpsG35aNu6Z:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "position": {

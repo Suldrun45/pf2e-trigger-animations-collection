@@ -1,8 +1,19 @@
 ## Unreleased
 
+## 0.10.4
+
 - **Animations**
+  - **New**
+    - Whip, Dance of Burning War, Vicious Swing, Stoked Flame Stance, Ironblood Stance, Qi Rush, Inner Upheaval (@ChasarooniZ)
   - **Updated**
     - Ignition _added a melee variant, fixed up timing_ (@ChasarooniZ)
+- **Update**
+  - Add `Attack Roll` special handling for `Fist`
+  - Updated all animations so that sounds (in general) to play even if no token exists
+  - Updated `GGG` to version `0.1.7`
+    - _Added new spell sounds_
+  - Updated `Trigger Animations` to version `0.9.1`
+  - Updated `Trigger Engine` to version `1.31.1`
 
 ## 0.10.3
 

@@ -169,6 +169,9 @@
       "inputs": {
         "location": {
           "connection": "04CgBHLM8Vn2TGTt:outputs:sources"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {

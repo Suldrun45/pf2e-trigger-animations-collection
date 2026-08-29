@@ -552,6 +552,9 @@
         },
         "moveTowards": {
           "connection": "ZprY3P5p0790W2MP:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
         }
       },
       "outs": {
