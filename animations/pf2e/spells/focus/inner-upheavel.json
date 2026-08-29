@@ -1,0 +1,375 @@
+{
+  "id": "WSNuPPvUcnhMuM0d",
+  "name": "Inner Upheavel",
+  "folder": "Spells",
+  "priority": 0,
+  "description": "<p>Created by @Chasarooni</p><p><strong>Trigger: <code>effect:spell-effect-inner-upheaval</code></strong></p>",
+  "nodes": [
+    {
+      "id": "mi2QYhPxoMszsrCY",
+      "position": {
+        "x": 85,
+        "y": 203.33333333333326
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "effect:spell-effect-inner-upheaval"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "wYMTrUAhj2umfTDR:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 855.7802197802199,
+        "y": 223.64285714285717
+      },
+      "id": "3TseSCxrRhOYuEWt",
+      "inputs": {
+        "name": {
+          "connection": "wYMTrUAhj2umfTDR:outputs:3kd5UrPJfLW3nnL0"
+        },
+        "origin": {
+          "connection": "wYMTrUAhj2umfTDR:outputs:zy1gnguHplBL9lOm"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "ZAd4DdbQlmT70MkK:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "mi2QYhPxoMszsrCY:outputs:item"
+        }
+      },
+      "position": {
+        "x": 356,
+        "y": 224.48333333333323
+      },
+      "id": "wYMTrUAhj2umfTDR",
+      "custom": {
+        "outputs": {
+          "3kd5UrPJfLW3nnL0": {
+            "id": "3kd5UrPJfLW3nnL0",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "zy1gnguHplBL9lOm": {
+            "id": "zy1gnguHplBL9lOm",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "h2vuRffGqkOGUmw1:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "3TseSCxrRhOYuEWt:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.on_token_buff.002.004.orangeyellow"
+        }
+      },
+      "position": {
+        "x": 1525.1428571428573,
+        "y": 91.53571428571445
+      },
+      "id": "miid2hxaTK4uk3Rk",
+      "outs": {
+        "out": {
+          "connection": "lufkGdkN7ikSS2w4:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "3TseSCxrRhOYuEWt:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
+        }
+      },
+      "position": {
+        "x": 1919.857142857143,
+        "y": 193.7214285714286
+      },
+      "id": "lufkGdkN7ikSS2w4",
+      "outs": {
+        "out": {
+          "connection": "Fw28texgqTv4t995:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "3TseSCxrRhOYuEWt:outputs:effect"
+        },
+        "location": {
+          "connection": "VHHvoOd032v309HE:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 2155.5714285714284,
+        "y": 186.57857142857142
+      },
+      "id": "Fw28texgqTv4t995",
+      "outs": {
+        "out": {
+          "connection": "9Oqm4fLQ3T4pj4ej:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mi2QYhPxoMszsrCY:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2023,
+        "y": 140.4285714285714
+      },
+      "id": "VHHvoOd032v309HE"
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 2377.9945054945056,
+        "y": 182.74999999999994
+      },
+      "id": "9Oqm4fLQ3T4pj4ej",
+      "inputs": {
+        "effect": {
+          "connection": "3TseSCxrRhOYuEWt:outputs:effect"
+        },
+        "fadeOutDuration": {
+          "value": 250
+        },
+        "fadeInDuration": {
+          "value": 250
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "xOYOv9MPVTZlWmN2:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2679.6611721611725,
+        "y": 180.24999999999994
+      },
+      "id": "xOYOv9MPVTZlWmN2",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.earth.buff.general.01.03"
+        },
+        "name": {
+          "connection": "538Vthhntouw8MCt:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "T0AtXUmBfWeXRW5n:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "wYMTrUAhj2umfTDR:outputs:3kd5UrPJfLW3nnL0"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2518.2380952380954,
+        "y": 131.24999999999994
+      },
+      "id": "538Vthhntouw8MCt"
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "xOYOv9MPVTZlWmN2:outputs:sound"
+        },
+        "location": {
+          "connection": "TT85x4XlagZRFNyH:outputs:entry"
+        },
+        "exitOnEmpty": {
+          "value": "global"
+        }
+      },
+      "position": {
+        "x": 2978.4880952380954,
+        "y": 181.39999999999998
+      },
+      "id": "T0AtXUmBfWeXRW5n",
+      "outs": {
+        "out": {
+          "connection": "YotH3WzmpBHOPETA:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "mi2QYhPxoMszsrCY:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2823.2380952380954,
+        "y": 125.24999999999994
+      },
+      "id": "TT85x4XlagZRFNyH"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "xOYOv9MPVTZlWmN2:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 3213.4880952380954,
+        "y": 180.9999999999999
+      },
+      "id": "YotH3WzmpBHOPETA",
+      "outs": {
+        "out": {
+          "connection": "8PIFQvWG1HOVyvla:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3497.494505494505,
+        "y": 183.50000000000006
+      },
+      "id": "8PIFQvWG1HOVyvla",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "type": "texts-match",
+      "inputs": {
+        "a": {
+          "connection": "mi2QYhPxoMszsrCY:outputs:matchedName"
+        },
+        "b": {
+          "value": "effect:spell-effect-inner-upheaval"
+        }
+      },
+      "position": {
+        "x": 576.7777777777774,
+        "y": 243.69444444444423
+      },
+      "id": "h2vuRffGqkOGUmw1",
+      "outs": {
+        "true": {
+          "connection": "3TseSCxrRhOYuEWt:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "file": {
+          "value": "jb2a.on_token_buff.001.001.orangeyellow"
+        },
+        "effect": {
+          "connection": "3TseSCxrRhOYuEWt:outputs:effect"
+        }
+      },
+      "position": {
+        "x": 1534.2539682539684,
+        "y": 299.5357142857147
+      },
+      "id": "pG77vitaoEUJk8m2",
+      "outs": {
+        "out": {
+          "connection": "lufkGdkN7ikSS2w4:ins:in"
+        }
+      }
+    },
+    {
+      "type": "module-enabled",
+      "position": {
+        "x": 1139.4786324786328,
+        "y": 223.50000000000026
+      },
+      "id": "ZAd4DdbQlmT70MkK",
+      "inputs": {
+        "module": {
+          "value": "jb2a_patreon"
+        }
+      },
+      "outs": {
+        "true": {
+          "connection": "miid2hxaTK4uk3Rk:ins:in"
+        },
+        "false": {
+          "connection": "pG77vitaoEUJk8m2:ins:in"
+        }
+      }
+    }
+  ],
+  "variables": {
+    "mi2QYhPxoMszsrCY:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "wYMTrUAhj2umfTDR:outputs:3kd5UrPJfLW3nnL0": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,374 @@
+{
+  "id": "vWjRK7jJd4qaLJDP",
+  "name": "Qi Rush",
+  "folder": "Spells",
+  "priority": 0,
+  "description": "<p>Created by @Chasarooni</p><p><strong>Trigger: <code>spell:qi-rush</code></strong></p>",
+  "nodes": [
+    {
+      "id": "saLuJCocmIcT1NCw",
+      "position": {
+        "x": 400,
+        "y": 200
+      },
+      "type": "animation-event",
+      "inputs": {
+        "name": {
+          "value": "spell:qi-rush"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "P21MItmEjI7AIoCQ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "effect",
+      "position": {
+        "x": 903.7802197802198,
+        "y": 207.6428571428571
+      },
+      "id": "mh5xJ0ltRRfLTcCD",
+      "inputs": {
+        "name": {
+          "connection": "P21MItmEjI7AIoCQ:outputs:b3bfjpLNEMYtDGhR"
+        },
+        "origin": {
+          "connection": "P21MItmEjI7AIoCQ:outputs:dWdyElUwpfVPBfLD"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "woXVZQI33yay9FdJ:ins:in"
+        }
+      }
+    },
+    {
+      "type": "extract-item",
+      "inputs": {
+        "input": {
+          "connection": "saLuJCocmIcT1NCw:outputs:item"
+        }
+      },
+      "position": {
+        "x": 671,
+        "y": 221.14999999999998
+      },
+      "id": "P21MItmEjI7AIoCQ",
+      "custom": {
+        "outputs": {
+          "b3bfjpLNEMYtDGhR": {
+            "id": "b3bfjpLNEMYtDGhR",
+            "input": "name",
+            "label": "Name",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          },
+          "dWdyElUwpfVPBfLD": {
+            "id": "dWdyElUwpfVPBfLD",
+            "input": "uuid",
+            "label": "UUID",
+            "slug": "path",
+            "isArray": false,
+            "type": "text"
+          }
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "mh5xJ0ltRRfLTcCD:ins:in"
+        }
+      }
+    },
+    {
+      "type": "file",
+      "inputs": {
+        "effect": {
+          "connection": "mh5xJ0ltRRfLTcCD:outputs:effect"
+        },
+        "file": {
+          "value": "jb2a.markers.on_token_mask.complete.01.orange"
+        }
+      },
+      "position": {
+        "x": 1188.1428571428573,
+        "y": 203.5357142857144
+      },
+      "id": "woXVZQI33yay9FdJ",
+      "outs": {
+        "out": {
+          "connection": "AKJSik1uETmis5PA:ins:in"
+        }
+      }
+    },
+    {
+      "type": "scale",
+      "state": "object",
+      "inputs": {
+        "effect": {
+          "connection": "mh5xJ0ltRRfLTcCD:outputs:effect"
+        },
+        "objectScale": {
+          "value": 2
+        }
+      },
+      "position": {
+        "x": 1403.857142857143,
+        "y": 205.7214285714286
+      },
+      "id": "AKJSik1uETmis5PA",
+      "outs": {
+        "out": {
+          "connection": "QcGlcnQTINFPWqWX:ins:in"
+        }
+      }
+    },
+    {
+      "type": "location",
+      "state": "targets",
+      "inputs": {
+        "effect": {
+          "connection": "mh5xJ0ltRRfLTcCD:outputs:effect"
+        },
+        "location": {
+          "connection": "gRogjJy0LF07E9e8:outputs:entry"
+        },
+        "attachTo": {
+          "value": true
+        }
+      },
+      "position": {
+        "x": 1639.5714285714284,
+        "y": 198.57857142857142
+      },
+      "id": "QcGlcnQTINFPWqWX",
+      "outs": {
+        "out": {
+          "connection": "QRWX0W75of9DvBwq:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "saLuJCocmIcT1NCw:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1507,
+        "y": 152.4285714285714
+      },
+      "id": "gRogjJy0LF07E9e8"
+    },
+    {
+      "type": "visibility",
+      "position": {
+        "x": 1861.9945054945053,
+        "y": 194.74999999999994
+      },
+      "id": "QRWX0W75of9DvBwq",
+      "inputs": {
+        "effect": {
+          "connection": "mh5xJ0ltRRfLTcCD:outputs:effect"
+        },
+        "fadeOutDuration": {
+          "value": 250
+        },
+        "fadeInDuration": {
+          "value": 250
+        },
+        "masks": {
+          "connection": "DDPIbmXAafRGke70:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "JwvrPBjmtRfIeYqj:ins:in"
+        }
+      }
+    },
+    {
+      "type": "sound",
+      "position": {
+        "x": 2390.327838827839,
+        "y": 190.91666666666669
+      },
+      "id": "PVm1u3wRRmL68JCO",
+      "inputs": {
+        "file": {
+          "value": "ggg-sfx.magic.divine.cast.general.02"
+        },
+        "name": {
+          "connection": "5YZW1N1re9theG5g:outputs:entry"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "AYPehGhzUrz2jHVF:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "P21MItmEjI7AIoCQ:outputs:b3bfjpLNEMYtDGhR"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2232.5714285714284,
+        "y": 137.24999999999994
+      },
+      "id": "5YZW1N1re9theG5g"
+    },
+    {
+      "type": "snd-location",
+      "state": "atLocation",
+      "inputs": {
+        "sound": {
+          "connection": "PVm1u3wRRmL68JCO:outputs:sound"
+        },
+        "location": {
+          "connection": "doAbrMMhjqyqmeJg:outputs:entry"
+        }
+      },
+      "position": {
+        "x": 2689.154761904762,
+        "y": 192.06666666666672
+      },
+      "id": "AYPehGhzUrz2jHVF",
+      "outs": {
+        "out": {
+          "connection": "wKo11fCUj1WSIHAx:ins:in"
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "saLuJCocmIcT1NCw:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 2533.904761904762,
+        "y": 135.91666666666669
+      },
+      "id": "doAbrMMhjqyqmeJg"
+    },
+    {
+      "type": "snd-flow",
+      "inputs": {
+        "sound": {
+          "connection": "PVm1u3wRRmL68JCO:outputs:sound"
+        },
+        "preset": {
+          "value": "troveSound"
+        }
+      },
+      "position": {
+        "x": 2924.154761904762,
+        "y": 191.66666666666663
+      },
+      "id": "wKo11fCUj1WSIHAx",
+      "outs": {
+        "out": {
+          "connection": "ipru1j4Ubs0WFHkA:ins:in"
+        }
+      }
+    },
+    {
+      "type": "play",
+      "position": {
+        "x": 3208.161172161172,
+        "y": 194.1666666666668
+      },
+      "id": "ipru1j4Ubs0WFHkA",
+      "inputs": {
+        "preload": {
+          "value": true
+        },
+        "local": {
+          "value": true
+        }
+      }
+    },
+    {
+      "inputs": {
+        "entry": {
+          "connection": "saLuJCocmIcT1NCw:outputs:sources"
+        }
+      },
+      "type": "__variable_getter__",
+      "position": {
+        "x": 1701.25,
+        "y": 124.25
+      },
+      "id": "DDPIbmXAafRGke70"
+    },
+    {
+      "type": "style",
+      "position": {
+        "x": 2170.173076923077,
+        "y": 190.49999999999994
+      },
+      "id": "JwvrPBjmtRfIeYqj",
+      "inputs": {
+        "effect": {
+          "connection": "QRWX0W75of9DvBwq:outputs:effect"
+        },
+        "filterType": {
+          "value": "ColorMatrix"
+        },
+        "filterData": {
+          "value": "{\n  \"brightness\": 1.5,\n  \"hue\": 65\n}"
+        }
+      },
+      "outs": {
+        "out": {
+          "connection": "uPCl0HdGFR4mFSwY:ins:in"
+        }
+      }
+    },
+    {
+      "type": "timing",
+      "state": "milliseconds",
+      "inputs": {
+        "effect": {
+          "connection": "JwvrPBjmtRfIeYqj:outputs:effect"
+        },
+        "playbackRate": {
+          "value": 2
+        },
+        "duration": {
+          "value": 4800
+        }
+      },
+      "position": {
+        "x": 2166.416666666667,
+        "y": 461.59444444444455
+      },
+      "id": "uPCl0HdGFR4mFSwY",
+      "outs": {
+        "out": {
+          "connection": "PVm1u3wRRmL68JCO:ins:in"
+        }
+      }
+    }
+  ],
+  "variables": {
+    "saLuJCocmIcT1NCw:outputs:sources": {
+      "isArray": true,
+      "label": "Sources",
+      "type": "target"
+    },
+    "P21MItmEjI7AIoCQ:outputs:b3bfjpLNEMYtDGhR": {
+      "isArray": false,
+      "label": "Name",
+      "type": "text"
+    }
+  }
+}
